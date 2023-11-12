@@ -10,5 +10,7 @@ module.exports = defineConfig({
     admin_url: 'http://localhost:2368/ghost',
     admin_email: '',
     admin_password: '',
+    contributor_email: '',
+    contributor_password: '',
   },
 });
