@@ -9,5 +9,6 @@ describe('Create a post', () => {
   })
  
   it('Publicar un post vacio', () => {
+    cy.get('button.gh-publish-trigger').should('not.exist');
   })
 })
