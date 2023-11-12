@@ -58,7 +58,8 @@ typings/
 
 # dotenv environment variables file
 .env
-cypress/cypress.env.json
+cypress.env.*
+cypress/cypress.env.*
 
 # IDE
 .idea/*
