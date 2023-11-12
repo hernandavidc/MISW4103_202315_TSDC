@@ -6,4 +6,9 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+  env: {
+    admin_url: 'http://localhost:2368/ghost',
+    admin_email: '',
+    admin_password: '',
+  },
 });
