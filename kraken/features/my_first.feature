@@ -85,8 +85,6 @@ Scenario: Navegar a la pagina para crear Post
   And I wait for 5 seconds
   And I click SignIn
   And I wait for 5 seconds 
-
-Feature: Iniciar una conversación
  
 @user5 @web  
 Scenario: Eliminar post
