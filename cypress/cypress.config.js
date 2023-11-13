@@ -7,7 +7,7 @@ module.exports = defineConfig({
     },
   },
   env: {
-    admin_url: 'http://localhost:2368/ghost',
+    admin_url: 'http://localhost:2368/ghost/#/signin',
     admin_email: '',
     admin_password: '',
     contributor_email: '',
