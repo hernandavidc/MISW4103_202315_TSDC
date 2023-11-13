@@ -10,7 +10,7 @@ describe('Delete a page', () => {
     })
    
     // Escenario 7.1
-    it('Eliminar una página', () => {
+    it('7.1 Eliminar una página', () => {
         // When
         const pageTitle = faker.lorem.sentence();
         const pageContent = faker.lorem.paragraphs(1);
@@ -20,11 +20,12 @@ describe('Delete a page', () => {
         cy.get('button.gh-btn.gh-btn-outline.gh-btn-icon.gh-btn-fullwidth').click();
         cy.get('button.gh-btn.gh-btn-red.gh-btn-icon.ember-view').click();
         // The before cy.get is to confirm button delete and generate a console error avoiding the next verification
+        // Then
         cy.get('gh-content-entry-title').contains(pageTitle).should('not.exist'); 
     })
 
     // Escenario 7.2
-    it('Abortar eliminación de una página', () => {
+    it('7.2 Abortar eliminación de una página', () => {
         // When
         const pageTitle = faker.lorem.sentence();
         const pageContent = faker.lorem.paragraphs(1);
@@ -35,6 +36,7 @@ describe('Delete a page', () => {
         cy.get('.modal-footer button.gh-btn').contains('Cancel').click();
         cy.get('a[href="#/pages/"]').click();
         cy.wait(1000)
-        cy.get('gh-content-entry-title').contains(pageTitle).should('exist'); 
+        // Then
+        cy.get('a.gh-post-list-title').contains(pageTitle); 
     })
   })
