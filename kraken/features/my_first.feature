@@ -1,4 +1,4 @@
-Feature: Iniciar una conversación
+Feature: Test para crear Pages y Post en ghost
 
 @user1 @web
 Scenario: Navegar a la pagina para crear Pages
