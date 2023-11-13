@@ -1,5 +1,7 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
 
+//LOGIN 
+
 When('I enter email {string}', async function (email) {
     let element = await this.driver.$('#identification');
     return await element.setValue(email);
@@ -62,6 +64,7 @@ Then('I Click in continue final review', async function () {
     return await element.click();
 });
 
+// CREATE POST 
 
 When('I click Post', async function () {
     let element = await this.driver.$('*[data-test-nav="posts"]');
@@ -72,3 +75,12 @@ Then('I click New Post', async function () {
     let element = await this.driver.$('*[data-test-new-post-button]');
     return await element.click();
 });
+
+// EDIT POST
+
+Then('I click Edit Post', async function () {
+    let element = await this.driver.$('*[title="Go to Editor"]');
+    return await element.click();
+});
+
+// ADD MEMBER
