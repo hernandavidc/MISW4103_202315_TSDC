@@ -82,7 +82,7 @@ describe('Create a post', () => {
     cy.get('.gh-post-list-title').first().find('.gh-content-entry-status').should('contain', 'Scheduled');
   })
 
-  it('1.4 Intentar publicar el post pero en el formulario de confirmación cancelar', () => {
+  it('1.4 Intentar publicar el post pero en el formulario de publicar cancelar', () => {
     // when
     const postTitle = faker.lorem.sentence();
     const postContent = faker.lorem.paragraphs(2);
