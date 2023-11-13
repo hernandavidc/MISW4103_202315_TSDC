@@ -100,8 +100,6 @@ Scenario: Eliminar post
   And I wait for 3 seconds
   And I click Options Post
   And I wait for 2 seconds
-  And I click Options Post
-  And I wait for 2 seconds
   And I click Delete Post
   And I wait for 2 seconds
   And I click Confirm Delete

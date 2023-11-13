@@ -127,11 +127,6 @@ When('I click Continue', async function() {
     let element = await this.driver.$('#ember5');
     return await element.click();
 });
-//SELECT PAGE
-When('I click Options Post', async function() {
-    let element = await this.driver.$('.ember-view.permalink.gh-list-data.gh-post-list-title');
-    return await element.click();
-});
 //OPTIONS POST
 When('I click Options Post', async function() {
     let element = await this.driver.$('[data-test-psm-trigger]');
