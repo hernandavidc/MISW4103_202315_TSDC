@@ -175,3 +175,47 @@ Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 3 seconds 
   And I click Return Tags 
   And I wait for 3 seconds
+
+@user9 @web
+Scenario: Navegar a la pagina para crear Post
+  Given I navigate to page "http://localhost:2368/ghost/#/posts"
+  And I wait for 5 seconds
+  When I enter email "cesaralej1392@hotmail.com"
+  And I wait for 2 seconds
+  And I enter password "Alejandro1392*"
+  And I wait for 5 seconds
+  And I click SignIn
+  And I wait for 5 seconds 
+  And I click Members
+  And I wait for 2 seconds
+  And I click Create New Member
+  And I Fill Name of the Member "Alejandro Colorado"
+  And I wait for 2 seconds
+  And I Fill Email of the Member "cesaralej1392@hotmail.com"
+  And I wait for 2 seconds 
+  And I Fill Note of the Member "Note Member"
+  And I wait for 2 seconds 
+  And I click save member
+  And I wait for 2 seconds
+
+@user10 @web
+Scenario: Navegar a la pagina para crear Post
+  Given I navigate to page "http://localhost:2368/ghost/#/posts"
+  And I wait for 5 seconds
+  When I enter email "cesaralej1392@hotmail.com"
+  And I wait for 2 seconds
+  And I enter password "Alejandro1392*"
+  And I wait for 5 seconds
+  And I click SignIn
+  And I wait for 5 seconds 
+  And I click Members  
+  And I wait for 2 seconds
+  And I click Details Members
+  And I Fill Name of the Member "Alejandro Tapia"
+  And I wait for 2 seconds
+  And I Fill Email of the Member "cesaralej1392@gmail.com"
+  And I wait for 2 seconds 
+  And I Fill Note of the Member "Note Member Modified"
+  And I wait for 2 seconds 
+  And I click save member
+  And I wait for 2 seconds

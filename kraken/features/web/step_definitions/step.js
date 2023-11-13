@@ -83,8 +83,44 @@ Then('I click Edit Post', async function () {
     return await element.click();
 });
 
-
 // ADD MEMBER
+
+When('I click Members', async function () {
+    let element = await this.driver.$('*[data-test-nav="members"]');
+    return await element.click();
+});
+
+When('I click Create New Member', async function () {
+    let element = await this.driver.$('*[data-test-new-member-button="true"]');
+    return await element.click();
+});
+
+When('I Fill Name of the Member {string}', async function (name) {
+    let element = await this.driver.$('#member-name');
+    return await element.setValue(name);
+});
+
+When('I Fill Email of the Member {string}', async function (email) {
+    let element = await this.driver.$('#member-email');
+    return await element.setValue(email);
+});
+
+When('I Fill Note of the Member {string}', async function (note) {
+    let element = await this.driver.$('#member-note');
+    return await element.setValue(note);
+});
+
+When('I click save member', async function() {
+    let element = await this.driver.$('[data-test-button="save"]');
+    return await element.click();
+})
+
+// EDIT MEMBER
+
+When('I click Details Members', async function () {
+    let element = await this.driver.$('*[data-test-table-data="details"]');
+    return await element.click();
+});
 
 //CONTINUE NEXT PAGE
 When('I click Continue', async function() {
