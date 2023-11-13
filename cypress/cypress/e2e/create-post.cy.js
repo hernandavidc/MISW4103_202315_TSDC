@@ -11,7 +11,7 @@ describe('Create a post', () => {
     });
   })
  
-  it('Publicar un post vacio', () => {
+  it('1.1 Publicar un post vacio', () => {
     // when
     const postTitle = faker.lorem.sentence();
     cy.get('textarea[placeholder="Post title"]').type(postTitle).clear();
@@ -20,7 +20,7 @@ describe('Create a post', () => {
     cy.get('.gh-publish-trigger').should('not.exist');
   })
  
-  it('Publicar un post y ver la entrada desde la vista de usuario final', () => {
+  it('1.2 Publicar un post y ver la entrada desde la vista de usuario final', () => {
     // when
     const postTitle = faker.lorem.sentence();
     const postContent = faker.lorem.paragraphs(2);
