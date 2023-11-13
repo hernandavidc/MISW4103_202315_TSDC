@@ -4,7 +4,7 @@ describe('Create a post', () => {
   beforeEach(()=>{
     // Given
     cy.login();
-    cy.get('a[href="#/posts/?type=draft"]').click();
+    cy.get('a[href="#/posts/"]').click();
     cy.get('a[href="#/editor/post/"]').then((btns) =>{
       const index = Math.floor(Math.random() * btns.length);
       btns[index].click();
@@ -99,6 +99,8 @@ describe('Create a post', () => {
     cy.get('[data-test-button="close-publish-flow"]').click();
     cy.wait(1000);
     cy.get('a[href="#/posts/"][data-test-breadcrumb]').click();
+    cy.wait(1000);
+    cy.get('a[href="#/posts/?type=draft"]').click();
     cy.wait(1000);
   
     //then
