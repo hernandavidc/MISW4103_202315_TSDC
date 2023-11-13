@@ -20,4 +20,8 @@ El ira por el feature paso a pasa ejecutando el codigo jquery que dejamos asocia
 Cuando el termina genera un reporte como se ve en el repositorio en la carpeta reports queda todo el informe HTML en donde se denota que dispositivos que pruebas y
 deja los screenshots guardados en el index report.
 
-Es necesario añadir en el path de windows el tema de las variables de entorno para adb, las cuales son de android.
+Es necesario añadir en el path de windows el tema de las variables de entorno para adb, las cuales son de android. Usamos este link para configurar las variables de entorno acorde
+
+https://stackoverflow.com/questions/20564514/adb-is-not-recognized-as-an-internal-or-external-command-operable-program-or
+
+Tambien hay que ser enfaticos de que funciona unicamente con una version de nodejs lo cual es una limitante, funciona con la version 16.14.2
