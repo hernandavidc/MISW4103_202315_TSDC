@@ -1,0 +1,337 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "test-para-crear-pages-y-post-en-ghost;navegar-a-la-pagina-para-crear-post",
+        "keyword": "Scenario",
+        "line": 54,
+        "name": "Navegar a la pagina para crear Post",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 30024000000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout._onTimeout (C:\\UniAndes\\Pruebas Automatizadas\\node_modules\\@cucumber\\cucumber\\lib\\user_code_runner.js:63:28)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 55,
+            "name": "I navigate to page \"http://localhost:2368/ghost/#/posts\"",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\web.js:41"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 56,
+            "name": "I wait for 5 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 57,
+            "name": "I enter email \"cesaralej1392@hotmail.com\"",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 59,
+            "name": "I enter password \"Alejandro1392*\"",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "I wait for 5 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "I click SignIn",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "I wait for 5 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 63,
+            "name": "I click Post",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:69"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 64,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 65,
+            "name": "I click Edit Post",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:81"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 66,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 67,
+            "name": "I add a title \"New Post Modified\"",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:30"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 68,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 69,
+            "name": "I click description",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:40"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 70,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 71,
+            "name": "I enter description \"Description Modified\"",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:45"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 73,
+            "name": "I publish the Page",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:57"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 74,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 75,
+            "name": "I Click in continue final review",
+            "match": {
+              "location": "features\\web\\step_definitions\\step.js:62"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 76,
+            "name": "I wait for 2 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 30006000000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout._onTimeout (C:\\UniAndes\\Pruebas Automatizadas\\node_modules\\@cucumber\\cucumber\\lib\\user_code_runner.js:63:28)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user3",
+            "line": 53
+          },
+          {
+            "name": "@web",
+            "line": 53
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "test-para-crear-pages-y-post-en-ghost",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Test para crear Pages y Post en ghost",
+    "tags": [],
+    "uri": "features\\my_first.feature"
+  }
+]
