@@ -41,6 +41,6 @@ describe('Delete a Post', () => {
             btns[index].click();
           });
         cy.wait(1000)
-        cy.get('a.gh-post-list-title').first().contains(postTitle); 
+        cy.get('a.gh-post-list-title').contains(postTitle); 
     })
   })

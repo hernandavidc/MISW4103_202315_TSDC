@@ -20,6 +20,7 @@ describe('Delete a page', () => {
         cy.get('button.gh-btn.gh-btn-outline.gh-btn-icon.gh-btn-fullwidth').click();
         cy.get('button.gh-btn.gh-btn-red.gh-btn-icon.ember-view').click();
         // The before cy.get is to confirm button delete and generate a console error avoiding the next verification
+        // Then
         cy.get('gh-content-entry-title').contains(pageTitle).should('not.exist'); 
     })
 
@@ -35,6 +36,7 @@ describe('Delete a page', () => {
         cy.get('.modal-footer button.gh-btn').contains('Cancel').click();
         cy.get('a[href="#/pages/"]').click();
         cy.wait(1000)
-        cy.get('a.gh-post-list-title').first().contains(pageTitle); 
+        // Then
+        cy.get('a.gh-post-list-title').contains(pageTitle); 
     })
   })
