@@ -11,5 +11,6 @@ Una vez instaladas las dependencias, ejecutar el siguiente comando el cual abrir
 En la ventana que abre de cypress, seleccionar E2E Testing, luego seleccionar el navegador Chrome o el de preferencia y dar en el botón de abajo para ejecutar las pruebas en el navegador 
 
 Otra opción para ejecutar cypress es desde la consola ejecutar:
-> npm run cypress:run
+> npm run cypress:run 
 
+Este muestra el resultado por consola de todos los escenarios probados.
