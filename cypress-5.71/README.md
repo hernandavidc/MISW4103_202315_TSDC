@@ -1,6 +1,7 @@
 ## Escenarios con cypress
 
 ### Instrucciones para ejecutar el código.
+GHOST CMS versión: 5.71
 
 Desde la raíz de la carpeta (primera carpeta cypress) ejecutar el siguiente comando con el fin de descargar los paquetes requeridos:
 > npm install
