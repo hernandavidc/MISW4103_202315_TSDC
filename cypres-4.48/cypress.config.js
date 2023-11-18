@@ -7,10 +7,10 @@ module.exports = defineConfig({
     },
   },
   env: {
-    admin_url: 'https://ghost-test-e23.digitalpress.blog/ghost/#/signin',
-    admin_email: 'd.pareja@uniandes.edu.co',
+    admin_url: 'http://ec2-18-191-49-64.us-east-2.compute.amazonaws.com:2368/ghost/#/signin',
+    admin_email: 'hd.alvarez@uniandes.edu.co',
     admin_password: 'QWER1234..',
-    contributor_email: 'd.pareja@uniandes.edu.co',
+    contributor_email: 'hd.alvarez@uniandes.edu.co',
     contributor_password: 'QWER1234..',
   },
 });
