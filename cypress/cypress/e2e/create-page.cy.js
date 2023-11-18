@@ -4,6 +4,7 @@ describe('Create a page', () => {
   // Given
   beforeEach(()=>{
     cy.login();
+    cy.wait(2000);
     cy.get('a[href="#/pages/"]').click();
     cy.get('a[href="#/editor/page/"]').click();
   })

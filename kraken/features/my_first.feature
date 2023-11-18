@@ -4,7 +4,7 @@ Feature: Test para crear Pages y Post en ghost
 Scenario: Navegar a la pagina para crear Pages
   Given I navigate to page "http://localhost:2368/ghost/#/pages"
   And I wait for 5 seconds
-  When I enter email "cesaralej1392@hotmail.com"
+  When I enter email "luciacolorado98@gmail.com"
   And I wait for 2 seconds
   And I enter password "Alejandro1392*"
   And I wait for 5 seconds
@@ -29,9 +29,9 @@ Scenario: Navegar a la pagina para crear Pages
 Scenario: Navegar a la pagina para crear Post
   Given I navigate to page "http://localhost:2368/ghost/#/posts"
   And I wait for 5 seconds
-  When I enter email "cesaralej1392@hotmail.com"
+  When I enter email "luciacolorado98@gmail.com"
   And I wait for 2 seconds
-  And I enter password "Alejandro1392*"
+  And I enter password "Grizy5944*"
   And I wait for 5 seconds
   And I click SignIn
   And I wait for 5 seconds
@@ -54,9 +54,9 @@ Scenario: Navegar a la pagina para crear Post
 Scenario: Navegar a la pagina para crear Post
   Given I navigate to page "http://localhost:2368/ghost/#/posts"
   And I wait for 5 seconds
-  When I enter email "cesaralej1392@hotmail.com"
+  When I enter email "luciacolorado98@gmail.com"
   And I wait for 2 seconds
-  And I enter password "Alejandro1392*"
+  And I enter password "Grizy5944*"
   And I wait for 5 seconds
   And I click SignIn
   And I wait for 5 seconds
@@ -79,9 +79,9 @@ Scenario: Navegar a la pagina para crear Post
 Scenario: Navegar a la pagina para crear Post
   Given I navigate to page "http://localhost:2368/ghost/#/posts"
   And I wait for 5 seconds
-  When I enter email "cesaralej1392@hotmail.com"
+  When I enter email "luciacolorado98@gmail.com"
   And I wait for 2 seconds
-  And I enter password "Alejandro1392*"
+  And I enter password "Grizy5944*"
   And I wait for 5 seconds
   And I click SignIn
   And I wait for 5 seconds 
@@ -94,17 +94,15 @@ Scenario: Eliminar post
   And I wait for 1 seconds
   And I enter password "Grizy5944*"
   And I wait for 2 seconds
-  And I click continue
+  And I click Continue
   And I wait for 7 seconds
-  And I click post
+  And I click Post
   And I wait for 3 seconds
-  And I click select_post
+  And I click Options Post
   And I wait for 2 seconds
-  And I click options_new_post
+  And I click Delete Post
   And I wait for 2 seconds
-  And I click delete_post
-  And I wait for 2 seconds
-  And I click confirm_delete_post
+  And I click Confirm Delete
   And I wait for 6 seconds
 
   @user6 @web  
@@ -115,11 +113,11 @@ Scenario: Eliminar post
   And I wait for 1 seconds
   And I enter password "Grizy5944*"
   And I wait for 2 seconds
-  And I click continue
+  And I click Continue
   And I wait for 7 seconds
-  And I click tags 
+  And I click Tags 
   And I wait for 3 seconds 
-  And I click view_tag_private 
+  And I click View Tag Private 
   And I wait for 3 seconds
 
 @user7 @web  
@@ -130,23 +128,23 @@ Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 1 seconds
   And I enter password "Grizy5944*"
   And I wait for 2 seconds
-  And I click continue
+  And I click Continue
   And I wait for 7 seconds
-  And I click tags 
+  And I click Tags 
   And I wait for 3 seconds 
-  And I click new_tags 
+  And I click New Tags 
   And I wait for 3 seconds 
-  And I click save_tags 
+  And I click Save Tags 
   And I wait for 3 seconds 
-  And I enter name_tag "Tag Test"
+  And I enter Name Tag "Tag Test"
   And I wait for 2 seconds
-  And I enter slug_tag "1234"
+  And I enter Slug Tag "1234"
   And I wait for 2 seconds
-  And I enter description_tag "Tag ok "
+  And I enter Description Tag "Tag ok "
   And I wait for 2 seconds
-  And I click retry_tags 
+  And I click Retry Tags 
   And I wait for 3 seconds 
-  And I click return_tags 
+  And I click Return Tags 
   And I wait for 3 seconds
  
 @user8 @web  
@@ -157,21 +155,65 @@ Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 1 seconds
   And I enter password "Grizy5944*"
   And I wait for 2 seconds
-  And I click continue
+  And I click Continue
   And I wait for 7 seconds
-  And I click tags 
+  And I click Tags 
   And I wait for 3 seconds 
-  And I click new_tags 
+  And I click New Tags 
   And I wait for 3 seconds 
-  And I click save_tags 
+  And I click Save Tags 
   And I wait for 3 seconds 
-  And I enter name_tag "Tag Test"
+  And I enter Name Tag "Tag Test"
   And I wait for 2 seconds
-  And I enter slug_tag "1234"
+  And I enter Slug Tag "1234"
   And I wait for 2 seconds
   And I enter description_tag "Tag ok "
   And I wait for 2 seconds
-  And I click retry_tags 
+  And I click Retry Tags 
   And I wait for 3 seconds 
-  And I click return_tags 
+  And I click Return Tags 
   And I wait for 3 seconds
+
+@user9 @web
+Scenario: Navegar a la pagina para crear Post
+  Given I navigate to page "http://localhost:2368/ghost/#/posts"
+  And I wait for 5 seconds
+  When I enter email "cesaralej1392@hotmail.com"
+  And I wait for 2 seconds
+  And I enter password "Alejandro1392*"
+  And I wait for 5 seconds
+  And I click SignIn
+  And I wait for 5 seconds 
+  And I click Members
+  And I wait for 2 seconds
+  And I click Create New Member
+  And I Fill Name of the Member "Alejandro Colorado"
+  And I wait for 2 seconds
+  And I Fill Email of the Member "cesaralej1392@hotmail.com"
+  And I wait for 2 seconds 
+  And I Fill Note of the Member "Note Member"
+  And I wait for 2 seconds 
+  And I click save member
+  And I wait for 2 seconds
+
+@user10 @web
+Scenario: Navegar a la pagina para crear Post
+  Given I navigate to page "http://localhost:2368/ghost/#/posts"
+  And I wait for 5 seconds
+  When I enter email "cesaralej1392@hotmail.com"
+  And I wait for 2 seconds
+  And I enter password "Alejandro1392*"
+  And I wait for 5 seconds
+  And I click SignIn
+  And I wait for 5 seconds 
+  And I click Members  
+  And I wait for 2 seconds
+  And I click Details Members
+  And I Fill Name of the Member "Alejandro Tapia"
+  And I wait for 2 seconds
+  And I Fill Email of the Member "cesaralej1392@gmail.com"
+  And I wait for 2 seconds 
+  And I Fill Note of the Member "Note Member Modified"
+  And I wait for 2 seconds 
+  And I click save member
+  And I wait for 2 seconds

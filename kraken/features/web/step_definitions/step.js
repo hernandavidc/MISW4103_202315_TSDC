@@ -85,129 +85,106 @@ Then('I click Edit Post', async function () {
 
 // ADD MEMBER
 
+When('I click Members', async function () {
+    let element = await this.driver.$('*[data-test-nav="members"]');
+    return await element.click();
+});
 
+When('I click Create New Member', async function () {
+    let element = await this.driver.$('*[data-test-new-member-button="true"]');
+    return await element.click();
+});
 
-const { When, Then } = require('@cucumber/cucumber');
+When('I Fill Name of the Member {string}', async function (name) {
+    let element = await this.driver.$('#member-name');
+    return await element.setValue(name);
+});
 
-When('I enter email {string}', async function (email) {
-    let element = await this.driver.$('#identification');
+When('I Fill Email of the Member {string}', async function (email) {
+    let element = await this.driver.$('#member-email');
     return await element.setValue(email);
 });
-When('I enter password {string}', async function (password) {
-    let element = await this.driver.$('#password');
-    return await element.setValue(password);
+
+When('I Fill Note of the Member {string}', async function (note) {
+    let element = await this.driver.$('#member-note');
+    return await element.setValue(note);
 });
-When('I click continue', async function() {
+
+When('I click save member', async function() {
+    let element = await this.driver.$('[data-test-button="save"]');
+    return await element.click();
+})
+
+// EDIT MEMBER
+
+When('I click Details Members', async function () {
+    let element = await this.driver.$('*[data-test-table-data="details"]');
+    return await element.click();
+});
+
+//CONTINUE NEXT PAGE
+When('I click Continue', async function() {
     let element = await this.driver.$('#ember5');
     return await element.click();
 });
-When('I click select_post', async function() {
-    let element = await this.driver.$('.ember-view.permalink.gh-list-data.gh-post-list-title');
-    return await element.click();
-});
-When('I click options_new_post', async function() {
+//OPTIONS POST
+When('I click Options Post', async function() {
     let element = await this.driver.$('[data-test-psm-trigger]');
     return await element.click();
 });
-When('I click delete_post', async function() {
+//DELETE POST
+When('I click Delete Post', async function() {
     let element = await this.driver.$('#entry-controls > div > div.settings-menu-content > div > button');
     return await element.click();
 });
-When('I click confirm_delete_post', async function() {
+//CONFIRMATION DELETE POST
+When('I click Confirm Delete', async function() {
     let element = await this.driver.$('[class="gh-btn gh-btn-red gh-btn-icon ember-view"]');
     return await element.click();
 });
-When('I click tags', async function() {
+//SELECT TAGS MENU
+When('I click Tags', async function() {
     let element = await this.driver.$('[data-test-nav="tags"]');
     return await element.click();
 });
-When('I click view_tag_private', async function() {
+//TAGS PRIVATE
+When('I click View Tag Private', async function() {
     let element = await this.driver.$('[class="gh-btn "]');
     return await element.click();
 })
-When('I enter name_tag {string}', async function (name_tag) {
+//NAME TAG
+When('I enter Name Tag {string}', async function (name_tag) {
     let element = await this.driver.$('#tag-name');
     return await element.setValue(name_tag);
 });
-When('I enter slug_tag {string}', async function (slug_tag) {
+
+When('I enter Slug Tag {string}', async function (slug_tag) {
     let element = await this.driver.$('#tag-slug');
     return await element.setValue(slug_tag);
 });
 
-When('I click post', async function() {
-    let element = await this.driver.$('[data-test-nav="posts"]');
-    return await element.click();
-});
-When('I click new_post', async function() {
-    let element = await this.driver.$('[data-test-new-post-button]');
-    return await element.click();
-});
-When('I enter title_post {string}', async function (title_post) {
-    let element = await this.driver.$('[data-test-editor-title-input]');
-    return await element.setValue(title_post);
-});
-When('I click new_description_post', async function() {
-    let element = await this.driver.$('[contenteditable="true"]');
-    return await element.click();
-});
-When('I enter description_post {string}', async function (description_post) {
-    let element = await this.driver.$('[data-koenig-dnd-droppable="true"]');
-    element.keys(['Control', 'a']);
-    element.keys(['Backspace']);
-    return await element.setValue(description_post);
-});
-When('I click return_new_post', async function() {
-    let element = await this.driver.$('[data-test-link="posts"]');
-    return await element.click();
-});
-When('I click save_new_post', async function() {
-    let element = await this.driver.$('[data-test-button="publish-flow"]');
-    return await element.click();
-});
-When('I click confirm_new_post', async function() {
-    let element = await this.driver.$('[data-test-button="continue"]');
-    return await element.click();
-});
-When('I click reconfirm_new_post', async function() {
-    let element = await this.driver.$('[data-test-task-button-state="idle"]');
-    return await element.click();
-});
-When('I click back_to_post', async function() {
-    let element = await this.driver.$('[data-test-button="back-to-editor"]');
-    return await element.click();
-});
-
-When('I click options_schedule_new_post', async function() {
-    let element = await this.driver.$('[data-test-date-time-picker-date-input]');
-    return await element.click();
-});
-When('I enter schedule_new_post {string}', async function (schedule_new_post) {
-    let element = await this.driver.$('[placeholder="YYYY-MM-DD"]');
-    return await element.setValue(schedule_new_post);
-});
-When('I click edite_post', async function() {
-    let element = await this.driver.$('[title="Go to Editor"]');
-    return await element.click();
-});
-When('I click new_tags', async function() {
+When('I click New Tags', async function() {
     let element = await this.driver.$('[class="ember-view gh-btn gh-btn-primary"]');
     return await element.click();
 });
-When('I click save_tags', async function() {
+When('I click Save Tags', async function() {
     let element = await this.driver.$('[data-test-task-button-state="idle"]');
     return await element.click();
 });
-When('I enter description_tag {string}', async function (description_tag) {
+When('I enter Description Tag {string}', async function (description_tag) {
     let element = await this.driver.$('#tag-description');
     return await element.setValue(description_tag);
 });
-When('I click retry_tags', async function() {
+When('I click Retry Tags', async function() {
     let element = await this.driver.$('[data-test-task-button-state="failure"]');
     return await element.click();
 });
-When('I click return_tags', async function() {
+When('I click Return Tags', async function() {
     let element = await this.driver.$('[data-test-link="tags-back"]');
     return await element.click();
 });
+
+
+
 
 

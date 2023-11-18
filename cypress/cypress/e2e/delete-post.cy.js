@@ -5,6 +5,7 @@ describe('Delete a Post', () => {
     // Given
     beforeEach(()=>{
       cy.login();
+      cy.wait(2000);
       cy.get('a[href="#/posts/"]').click();
       cy.get('a[href="#/editor/post/"]').then((btns) =>{
         const index = Math.floor(Math.random() * btns.length);
