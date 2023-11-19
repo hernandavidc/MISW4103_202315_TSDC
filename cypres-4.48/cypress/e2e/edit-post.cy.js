@@ -22,7 +22,7 @@ describe('Edit a post', () => {
     });
     const postContent = faker.lorem.paragraphs(1);
     cy.get('textarea.gh-editor-title.ember-text-area').type(postTitleNewPost);
-    cy.get('p[data-koenig-dnd-droppable="true"]').type(postContent);
+    cy.get('.koenig-editor__editor.__mobiledoc-editor').type(postContent);
     cy.get('a[href="#/posts/"]').then((btns) =>{
         const index = Math.floor(Math.random() * btns.length);
         btns[index].click();

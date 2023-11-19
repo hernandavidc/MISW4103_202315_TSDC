@@ -11,7 +11,10 @@ describe('Create a post', () => {
       cy.screenshot('1.1-0');
       initScreenshot = true;
     }
-    cy.get('a[href="#/posts/"]').click();
+    cy.get('a[href="#/posts/"]').then((btns) =>{
+      const index = Math.floor(Math.random() * btns.length);
+      btns[index].click();
+    });
     cy.get('a[href="#/editor/post/"]').then((btns) =>{
       const index = Math.floor(Math.random() * btns.length);
       btns[index].click();
@@ -26,7 +29,7 @@ describe('Create a post', () => {
     cy.screenshot('1.1-2');
 
     //then
-    cy.get('.gh-publish-trigger').should('not.exist');
+    cy.get('.gh-publishmenu-trigger').should('not.exist');
     cy.screenshot('1.1-3');
   })
  
@@ -36,7 +39,7 @@ describe('Create a post', () => {
     const postTitle = faker.lorem.sentence();
     const postContent = faker.lorem.paragraphs(2);
     cy.get('textarea[placeholder="Post title"]').type(postTitle);
-    cy.get('.kg-prose > p').type(postContent);
+    cy.get('.koenig-editor__editor.__mobiledoc-editor').type(postContent);
     cy.screenshot('1.2-2');
 
     // Se define la URL
@@ -49,20 +52,23 @@ describe('Create a post', () => {
     cy.screenshot('1.2-4');
 
     // Proceso para confirmar la publiación del post
-    cy.get('.gh-publish-trigger').click();
+    cy.get('.gh-publishmenu-trigger').click();
     cy.wait(1000);
     cy.screenshot('1.2-5');
-    cy.get('button').contains('Continue').click();
+    cy.get('.gh-publishmenu-button').click();
     cy.wait(1000);
     cy.screenshot('1.2-6');
-    cy.get('.gh-publish-cta button').contains('Publish').click();
+    cy.get('.gh-btn-black.gh-btn-icon').contains('Publish').click();
     cy.wait(1000);
     cy.screenshot('1.2-7');
-    cy.get('.gh-post-bookmark-wrapper').invoke('removeAttr', 'target').click();
-
+    cy.get('a[href="#/posts/"]').then((btns) =>{
+      const index = Math.floor(Math.random() * btns.length);
+      btns[index].click();
+    });
+    cy.wait(1000);
     cy.screenshot('1.2-8');
     //then
-    cy.get('h1').should('contain', postTitle);
+    cy.get('h3').should('contain', postTitle);
     cy.url().should('include', '-blog-test');
   })
  
@@ -72,7 +78,7 @@ describe('Create a post', () => {
     const postTitle = faker.lorem.sentence();
     const postContent = faker.lorem.paragraphs(2);
     cy.get('textarea[placeholder="Post title"]').type(postTitle);
-    cy.get('.kg-prose > p').type(postContent);
+    cy.get('.koenig-editor__editor.__mobiledoc-editor').type(postContent);
     cy.screenshot('1.3-2');
 
     // Se define la URL
@@ -85,7 +91,7 @@ describe('Create a post', () => {
     cy.screenshot('1.3-4');
 
     // Proceso para confirmar la publiación del post
-    cy.get('.gh-publish-trigger').click();
+    cy.get('.gh-publishmenu-trigger').click();
     cy.wait(1000);
     cy.screenshot('1.3-5');
     cy.get('[data-test-setting="publish-at"] button').click();
@@ -116,11 +122,11 @@ describe('Create a post', () => {
     const postTitle = faker.lorem.sentence();
     const postContent = faker.lorem.paragraphs(2);
     cy.get('textarea[placeholder="Post title"]').type(postTitle);
-    cy.get('.kg-prose > p').type(postContent);
+    cy.get('.koenig-editor__editor.__mobiledoc-editor').type(postContent);
     cy.screenshot('1.4-2');
 
     // Proceso para confirmar la publiación del post
-    cy.get('.gh-publish-trigger').click();
+    cy.get('.gh-publishmenu-trigger').click();
     cy.wait(1000);
     cy.screenshot('1.4-3');
     cy.get('button').contains('Continue').click();

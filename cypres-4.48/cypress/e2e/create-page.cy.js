@@ -33,7 +33,7 @@ describe('Create a page', () => {
     const pageTitle = faker.lorem.sentence();
     const pageContent = faker.lorem.paragraphs(2);
     cy.get('textarea[placeholder="Page title"]').type(pageTitle);
-    cy.get('.kg-prose > p').type(pageContent);
+    cy.get('.koenig-editor__editor.__mobiledoc-editor > p').type(pageContent);
     cy.screenshot('5.2-2');
 
     // Se define la URL
@@ -68,7 +68,7 @@ describe('Create a page', () => {
     const pageTitle = faker.lorem.sentence();
     const pageContent = faker.lorem.paragraphs(2);
     cy.get('textarea[placeholder="Page title"]').type(pageTitle);
-    cy.get('.kg-prose > p').type(pageContent);
+    cy.get('.koenig-editor__editor.__mobiledoc-editor > p').type(pageContent);
     cy.screenshot('5.3-2');
 
     // Se define la URL
@@ -112,7 +112,7 @@ describe('Create a page', () => {
     const pageTitle = faker.lorem.sentence();
     const pageContent = faker.lorem.paragraphs(2);
     cy.get('textarea[placeholder="Page title"]').type(pageTitle);
-    cy.get('.kg-prose > p').type(pageContent);
+    cy.get('.koenig-editor__editor.__mobiledoc-editor > p').type(pageContent);
     cy.screenshot('5.4-2');
 
     // Proceso para confirmar la publiación del post

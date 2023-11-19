@@ -12,7 +12,10 @@ describe('Delete a Post', () => {
       cy.screenshot('3.1-0');
       initScreenshot = true;
     }
-    cy.get('a[href="#/posts/"]').click();
+    cy.get('a[href="#/posts/"]').then((btns) =>{
+      const index = Math.floor(Math.random() * btns.length);
+      btns[index].click();
+    });
     cy.get('a[href="#/editor/post/"]').then((btns) =>{
       const index = Math.floor(Math.random() * btns.length);
       btns[index].click();
@@ -26,16 +29,18 @@ describe('Delete a Post', () => {
     const postTitle = faker.lorem.sentence();
     const postContent = faker.lorem.paragraphs(1);
     cy.get('textarea.gh-editor-title.ember-text-area').type(postTitle);
-    cy.get('p[data-koenig-dnd-droppable="true"]').type(postContent);
+    cy.get('.koenig-editor__editor.__mobiledoc-editor').type(postContent);
     cy.screenshot('3.1-2');
     cy.get('button.settings-menu-toggle.gh-btn.gh-btn-editor').click()
     cy.screenshot('3.1-3');
-    cy.get('button.gh-btn.gh-btn-outline.gh-btn-icon.gh-btn-fullwidth').click();
+    cy.get('button.settings-menu-delete-button').click();
     cy.screenshot('3.1-4');
     cy.get('button.gh-btn.gh-btn-red.gh-btn-icon.ember-view').click();
+    // apparently the confirmation modal doesn't work 
+    cy.wait(1000)
     cy.screenshot('3.1-5');
-    // The before cy.get is to confirm button delete and generate a console error avoiding the next verification
-    cy.get('gh-content-entry-title').contains(postTitle).should('not.exist'); 
+    //Then
+    cy.get('a.gh-post-list-title').contains(postTitle).should('not.exist'); 
   })
 
   // Escenario 3.2
@@ -45,11 +50,11 @@ describe('Delete a Post', () => {
     const postTitle = faker.lorem.sentence();
     const postContent = faker.lorem.paragraphs(1);
     cy.get('textarea.gh-editor-title.ember-text-area').type(postTitle);
-    cy.get('p[data-koenig-dnd-droppable="true"]').type(postContent);
+    cy.get('.koenig-editor__editor.__mobiledoc-editor').type(postContent);
     cy.screenshot('3.2-2');
     cy.get('button.settings-menu-toggle.gh-btn.gh-btn-editor').click()
     cy.screenshot('3.2-3');
-    cy.get('button.gh-btn.gh-btn-outline.gh-btn-icon.gh-btn-fullwidth').click();
+    cy.get('button.settings-menu-delete-button').click();
     cy.screenshot('3.2-4');
     cy.get('.modal-footer button.gh-btn').contains('Cancel').click();
     cy.screenshot('3.2-5');
@@ -59,6 +64,7 @@ describe('Delete a Post', () => {
       });
     cy.wait(1000)
     cy.screenshot('3.2-6');
+    // Then
     cy.get('a.gh-post-list-title').contains(postTitle); 
   })
 })

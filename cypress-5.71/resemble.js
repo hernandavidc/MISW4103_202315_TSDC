@@ -4,17 +4,20 @@ const config = require("./config.json");
 const fs = require('fs');
 
 async function executeResembleReport(){
-    var rootPathOld = "./cypress/screenshots"
+    var rootPathOld = "../cypres-4.48/cypress/screenshots"
     var rootPathNew = "./cypress/screenshots"
-    var oldVersionImagesRoutes = service.filesList(rootPathOld, ["create-page", "create-post"])
-    var newVersionImagesRoutes = service.filesList(rootPathNew, ["create-page", "create-post"])
+    var oldVersionImagesRoutes = service.filesList(rootPathOld, ["delete-page", "delete-post", "SEO", "edit-post"])
+    var newVersionImagesRoutes = service.filesList(rootPathNew, ["delete-page", "delete-post", "SEO", "edit-post"])
+    var equivalentImages = oldVersionImagesRoutes.filter((old) => {
+      return newVersionImagesRoutes.some(newVersion => old == newVersion);
+  })
     let resultInfo = {}
     let reportInfoConsolidated = []
     let datetime = new Date().toISOString().replace(/:/g,".");
-    for (var i = 0; i < newVersionImagesRoutes.length; i++) {
+    for (var i = 0; i < equivalentImages.length; i++) {
         const data = await compareImages(
-            fs.readFileSync(oldVersionImagesRoutes[i]),
-            fs.readFileSync(newVersionImagesRoutes[i]),
+            fs.readFileSync(rootPathOld + "/" + equivalentImages[i]),
+            fs.readFileSync(rootPathNew + "/" +  equivalentImages[i]),
             config.options
         );
         let comparedFilePath = newVersionImagesRoutes[i].split("/")
@@ -26,8 +29,8 @@ async function executeResembleReport(){
             misMatchPercentage: data.misMatchPercentage,
             diffBounds: data.diffBounds,
             analysisTime: data.analysisTime,
-            oldImagePath: "../.." + oldVersionImagesRoutes[i].substring(1),
-            newImagePath: "../.." + newVersionImagesRoutes[i].substring(1),
+            oldImagePath: "../../"+ rootPathOld + "/" + equivalentImages[i],
+            newImagePath: "../.."+ rootPathNew.substring(1) + "/" +  equivalentImages[i],
             fileNameCompared: fileNameCompared
         }
         reportInfoConsolidated.push(resultInfo)
