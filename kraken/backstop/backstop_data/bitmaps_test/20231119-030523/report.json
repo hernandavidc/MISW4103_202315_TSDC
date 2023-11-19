@@ -1,0 +1,114 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\Ghost_Testing_Login_Page_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20231119-030523\\Ghost_Testing_Login_Page_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost_Testing_Login_Page_0_document_0_desktop.png",
+        "label": "Login Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://localhost:3001/ghost/#/signin",
+        "referenceUrl": "http://localhost:4001/ghost/#/signin",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 2.927131558641975,
+          "misMatchPercentage": "2.93",
+          "analysisTime": 104
+        },
+        "diffImage": "..\\bitmaps_test\\20231119-030523\\failed_diff_Ghost_Testing_Login_Page_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\Ghost_Testing_View_Site_Page_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20231119-030523\\Ghost_Testing_View_Site_Page_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost_Testing_View_Site_Page_0_document_0_desktop.png",
+        "label": "View Site Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://localhost:3001/ghost/#/site",
+        "referenceUrl": "http://localhost:4001/ghost/#/site",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 63.425347222222214,
+          "misMatchPercentage": "63.43",
+          "analysisTime": 62
+        },
+        "diffImage": "..\\bitmaps_test\\20231119-030523\\failed_diff_Ghost_Testing_View_Site_Page_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\Ghost_Testing_Login_2_Page_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20231119-030523\\Ghost_Testing_Login_2_Page_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost_Testing_Login_2_Page_0_document_0_desktop.png",
+        "label": "Login 2 Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://localhost/images/test4-2/screenshots/login1.png",
+        "referenceUrl": "http://localhost/images/test4-1/screenshots/login1.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 5.810667438271605,
+          "misMatchPercentage": "5.81",
+          "analysisTime": 66
+        },
+        "diffImage": "..\\bitmaps_test\\20231119-030523\\failed_diff_Ghost_Testing_Login_2_Page_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\Ghost_Testing_Login_1_Page_0_document_0_desktop.png",
+        "test": "..\\bitmaps_test\\20231119-030523\\Ghost_Testing_Login_1_Page_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost_Testing_Login_1_Page_0_document_0_desktop.png",
+        "label": "Login 1 Page",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://localhost/images/test4-2/screenshots/login1.png",
+        "referenceUrl": "http://localhost/images/test4-1/screenshots/login1.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 5.810667438271605,
+          "misMatchPercentage": "5.81",
+          "analysisTime": 74
+        },
+        "diffImage": "..\\bitmaps_test\\20231119-030523\\failed_diff_Ghost_Testing_Login_1_Page_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "Ghost_Testing"
+}
