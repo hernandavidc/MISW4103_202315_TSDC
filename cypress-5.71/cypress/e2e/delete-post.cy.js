@@ -60,6 +60,7 @@ describe('Delete a Post', () => {
       const index = Math.floor(Math.random() * btns.length);
       btns[index].click();
     });
+    cy.wait(1000)
     cy.screenshot('3.2-6');
     cy.get('a.gh-post-list-title').contains(postTitle); 
   })
