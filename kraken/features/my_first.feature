@@ -22,7 +22,7 @@ Scenario: Navegar a la pagina para crear Pages
   And I wait for 2 seconds
   And I publish the Page
   And I wait for 2 seconds
-  And I Click in continue final review
+  Then I Click in continue final review
   And I wait for 2 seconds
 
 @user2 @web
@@ -47,7 +47,7 @@ Scenario: Navegar a la pagina para crear Post
   And I wait for 2 seconds
   And I publish the Page
   And I wait for 2 seconds
-  And I Click in continue final review
+  Then I Click in continue final review
   And I wait for 2 seconds
 
   
@@ -73,7 +73,7 @@ Scenario: Navegar a la pagina para Editar Post
   And I wait for 2 seconds
   And I publish the Page
   And I wait for 2 seconds
-  And I Click in continue final review
+  Then I Click in continue final review
   And I wait for 2 seconds
 
   @user4 @web
@@ -84,10 +84,10 @@ Scenario: Login
   And I wait for 2 seconds
   And I enter password "Grizy5944*"
   And I wait for 5 seconds
-  And I click SignIn
+  Then I click SignIn
   And I wait for 5 seconds 
  
- @user1 @web  
+ @user5 @web  
 Scenario:  Prueba crear Post en borrador
   Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds
@@ -107,10 +107,10 @@ Scenario:  Prueba crear Post en borrador
   And I wait for 3 seconds
   And I enter Description "Prueba de post Descripcion"
   And I wait for 2 seconds  
-  And I click Return New Post
+  Then I click Return New Post
   And I wait for 2 seconds  
 
-  @user1 @web  
+  @user6 @web  
 Scenario:  Prueba crear Post en borrador
   Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds
@@ -130,11 +130,11 @@ Scenario:  Prueba crear Post en borrador
   And I wait for 3 seconds
   And I enter Description "Prueba de post Descripcion"
   And I wait for 2 seconds  
-  And I click Return New Post
+  Then I click Return New Post
   And I wait for 2 seconds  
 
   
-@user1 @web  
+@user7 @web  
 Scenario:  Prueba crear y publicar post.
   Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds
@@ -162,11 +162,11 @@ Scenario:  Prueba crear y publicar post.
   And I wait for 3 seconds
   And I click Back
   And I wait for 3 seconds
-  And I click Return New Post
+  Then I click Return New Post
   And I wait for 2 seconds
 
   
-@user1 @web  
+@user8 @web  
 Scenario:  Prueba crear post en el Calendario.
   Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds
@@ -200,10 +200,10 @@ Scenario:  Prueba crear post en el Calendario.
   And I wait for 3 seconds
   And I click Back
   And I wait for 3 seconds
-  And I click Return New Post
+  Then I click Return New Post
   And I wait for 2 seconds  
 
-@user1 @web  
+@user9 @web  
 Scenario: Eliminar post
   Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds
@@ -221,10 +221,10 @@ Scenario: Eliminar post
   And I wait for 2 seconds
   And I click Delete Post
   And I wait for 2 seconds
-  And I click Confirm Delete
+  Then I click Confirm Delete
   And I wait for 6 seconds
 
-@user1 @web  
+@user10 @web  
 Scenario: Crear new Page Borrador 
   Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds
@@ -244,10 +244,10 @@ Scenario: Crear new Page Borrador
   And I wait for 3 seconds 
   And I enter Description "Uniandes"
   And I wait for 2 seconds
-  And I click Return New Pages
+  Then I click Return New Pages
   And I wait for 6 seconds
 
-@user1 @web   
+@user11 @web   
 Scenario: Crear y publicar una page 
   Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds
@@ -273,10 +273,10 @@ Scenario: Crear y publicar una page
   And I wait for 6 seconds
   And I click Save Tags
   And I wait for 6 seconds
-  And I click Return New Pages
+  Then I click Return New Pages
   And I wait for 6 seconds
 
-  @user1 @web  
+  @user12 @web  
 Scenario: Crear nueva pages publicada calendario 
   Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds
@@ -310,11 +310,11 @@ Scenario: Crear nueva pages publicada calendario
   And I wait for 6 seconds
   And I click Back
   And I wait for 5 seconds
-  And I click Return New Pages
+  Then I click Return New Pages
   And I wait for 3 seconds
 
   
-@user1 @web  
+@user13 @web  
 Scenario: Editar page
   Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds
@@ -334,11 +334,11 @@ Scenario: Editar page
   And I wait for 1 seconds
   And I enter Description "exitosa"
   And I wait for 4 seconds
-  And I click Return New Pages
+  Then I click Return New Pages
   And I wait for 3 seconds
  
 
-   @user1 @web  
+   @user14 @web  
 Scenario: Eliminar pages 
   Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds
@@ -356,10 +356,10 @@ Scenario: Eliminar pages
   And I wait for 2 seconds
   And I click Delete Post
   And I wait for 2 seconds
-  And I click Confirm Delete
+  Then I click Confirm Delete
   And I wait for 5 seconds
 
-  @user1 @web  
+  @user15 @web  
 Scenario: Crear nuevo tag 
 Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds
@@ -381,10 +381,10 @@ Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 2 seconds
   And I click Save Tags 
   And I wait for 3 seconds 
-  And I click Return Tags
+  Then I click Return Tags
   And I wait for 3 seconds
 
-  @user1 @web  
+  @user16 @web  
 Scenario: Colocarle un tag a un post
   Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds
@@ -432,10 +432,10 @@ Scenario: Colocarle un tag a un post
   And I wait for 3 seconds
   And I click Back
   And I wait for 3 seconds
-  And I click Return New Post
+  Then I click Return New Post
   And I wait for 2 seconds
 
-@user1 @web  
+@user17 @web  
 Scenario: Añadir members
 Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds
@@ -457,12 +457,12 @@ Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 3 seconds
   And I click save member
   And I wait for 7 seconds
-  And I click Members 
+  Then I click Members 
   And I wait for 6 seconds
 
 
   
-@user1 @web
+@user18 @web
 Scenario: crear y editar members
 Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds
@@ -496,10 +496,10 @@ Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 3 seconds
   And I click save member
   And I wait for 7 seconds
-  And I click Members 
+  Then I click Members 
   And I wait for 6 seconds
 
-  @user1 @web  
+  @user19 @web  
 Scenario: borrar miembro en ghost
 Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds
@@ -517,10 +517,10 @@ Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds 
   And I click Confirm Delete Members
   And I wait for 5 seconds 
-  And I click Reconfirm Delete Members
+  Then I click Reconfirm Delete Members
   And I wait for 5 seconds 
 
-  @user1 @web  
+  @user20 @web  
 Scenario: ver tag publicos
   Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 5 seconds
@@ -531,5 +531,5 @@ Scenario: ver tag publicos
   And I click Continue
   And I wait for 7 seconds
   And I click Tags 
-  And I wait for 3 seconds 
+  Then I wait for 3 seconds 
   And I click Tags Publico
