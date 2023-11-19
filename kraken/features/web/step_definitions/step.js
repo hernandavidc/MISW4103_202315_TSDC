@@ -22,44 +22,51 @@ When('I click Pages', async function () {
     return await element.click();
 })
 
-Then('I click New Page', async function () {
+When('I click Return New Pages', async function() {
+    let element = await this.driver.$('[data-test-link="pages"]');
+    return await element.click();
+})
+
+When('I click New Page', async function () {
     let element = await this.driver.$('*[data-test-new-page-button]');
     return await element.click();
 });
 
-Then('I add a title {string}', async function (title) {
+When('I enter a title {string}', async function (title) {
     let element = await this.driver.$('*[data-test-editor-title-input]');
     return await element.setValue(title);
 });
 
-Then('I add the message {string}', async function (message) {
+When('I add the message {string}', async function (message) {
     let element = await this.driver.$('*[data-koenig-dnd-container="true"]');
     return await element.val(message)      
 });
 
-Then('I click description', async function () {
+When('I click Description', async function () {
     let element = await this.driver.$('[contenteditable="true"]');
     return await element.click();
 });
 
-Then('I enter description {string}', async function (description) {
+When('I enter Description {string}', async function (description) {
     let element = await this.driver.$('[data-koenig-dnd-droppable="true"]');
     element.keys(['Control', 'a']);
     element.keys(['Backspace']);
     return await element.setValue(description);     
 });
 
-Then('I click and add Image', async function () {
+
+
+When('I click and add Image', async function () {
     let element = await this.driver.$('*[data-kg-cardmenu-idx="1"]');
     return await element.click();      
 });
 
-Then('I publish the Page', async function () {
+When('I publish the Page', async function () {
     let element = await this.driver.$('*[data-test-button="publish-flow"]');
     return await element.click();
 });
 
-Then('I Click in continue final review', async function () {
+When('I Click in continue final review', async function () {
     let element = await this.driver.$('*[data-test-button="continue"]');
     return await element.click();
 });
@@ -71,15 +78,15 @@ When('I click Post', async function () {
     return await element.click();
 })
 
-Then('I click New Post', async function () {
+When('I click New Post', async function () {
     let element = await this.driver.$('*[data-test-new-post-button]');
     return await element.click();
 });
 
 // EDIT POST
 
-Then('I click Edit Post', async function () {
-    let element = await this.driver.$('*[title="Go to Editor"]');
+When('I click Edit Post', async function () {
+    let element = await this.driver.$('[title="Go to Editor"]');
     return await element.click();
 });
 
@@ -127,9 +134,9 @@ When('I click Continue', async function() {
     let element = await this.driver.$('#ember5');
     return await element.click();
 });
-//OPTIONS POST
+//SELECT PAGE
 When('I click Options Post', async function() {
-    let element = await this.driver.$('[data-test-psm-trigger]');
+    let element = await this.driver.$('.ember-view.permalink.gh-list-data.gh-post-list-title');
     return await element.click();
 });
 //DELETE POST
@@ -183,8 +190,90 @@ When('I click Return Tags', async function() {
     let element = await this.driver.$('[data-test-link="tags-back"]');
     return await element.click();
 });
+//Complete Title
+When('I enter Title Post {string}', async function (title_post) {
+    let element = await this.driver.$('[data-test-editor-title-input]');
+    return await element.setValue(title_post);
+});
 
+When('I click Return New Post', async function() {
+    let element = await this.driver.$('[data-test-link="posts"]');
+    return await element.click();
+})
 
+When('I click Save Post', async function() {
+    let element = await this.driver.$('[data-test-button="publish-flow"]');
+    return await element.click();
+})
 
+//Confirmar en new post 
+When('I click Confirm Post', async function() {
+    let element = await this.driver.$('[data-test-button="continue"]');
+    return await element.click();
+})
+//Confirmar en new post 
+When('I click Reconfirm Post', async function() {
+    let element = await this.driver.$('[data-test-task-button-state="idle"]');
+    return await element.click();
+})
 
+When('I click Back', async function() {
+    let element = await this.driver.$('[data-test-button="back-to-editor"]');
+    return await element.click();
+})
 
+When('I click Options New Post', async function() {
+    let element = await this.driver.$('[data-test-psm-trigger]');
+    return await element.click();
+})
+// Agregar fecha de publicacion post 
+When('I click Options Schedule Post', async function() {
+    let element = await this.driver.$('[data-test-date-time-picker-date-input]');
+    return await element.click();
+})
+//Completar campo fecha de publicacion post
+When('I enter Schedule New Post {string}', async function (schedule_new_post) {
+    let element = await this.driver.$('[placeholder="YYYY-MM-DD"]');
+    return await element.setValue(schedule_new_post);
+});
+
+When('I click Update Pages', async function() {
+    let element = await this.driver.$('[data-test-button="publish-flow"]');
+    return await element.click();
+})
+
+When('I click Set Tag', async function() {
+    let element = await this.driver.$('[class="ember-power-select-trigger-multiple-input"]');
+    return await element.click();
+})
+
+//seleccionar tag a post 
+When('I click Select Tag', async function() {
+    let element = await this.driver.$('[class="ember-power-select-option"]');
+    return await element.click();
+})
+
+When('I click Edit Members', async function() {
+    let element = await this.driver.$('[data-test-list="members-list-item"]');
+    return await element.click();
+}) 
+
+When('I click Delete Members', async function() {
+    let element = await this.driver.$('[data-test-button="member-actions"]');
+    return await element.click();
+}) 
+//Click confirmar eliminar members 
+When('I click Confirm Delete Members', async function() {
+    let element = await this.driver.$('[data-test-button="delete-member"]');
+    return await element.click();
+}) 
+//Click  re confirmar eliminar members 
+When('I click Reconfirm Delete Members', async function() {
+    let element = await this.driver.$('[data-test-button="confirm"]');
+    return await element.click();
+}) 
+
+When('I click Tags Publico', async function() {
+    let element = await this.driver.$('[class="gh-btn gh-btn-group-selected"]');
+    return await element.click();
+})
