@@ -18,9 +18,10 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-Cypress.Commands.add('login', () => { 
+Cypress.Commands.add('login', (fileName = false) => { 
   cy.visit(Cypress.env('admin_url'));
   cy.wait(1000);
+  if(fileName){ cy.screenshot(fileName); }
   cy.get('input[name="identification"]').type(Cypress.env('admin_email'));
   cy.get('input[name="password"]').type(Cypress.env('admin_password'));
   cy.get('button.login.gh-btn').click();
