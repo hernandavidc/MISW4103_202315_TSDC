@@ -10,8 +10,6 @@ Este release fue realizado por los siguientes estudiantes:
 
 ## Instalación y Ejecución de Pruebas
 
-_Nota: para la entrega de la semana 6 se hosteo las plataformas en la nube_
-
 ### Pruebas de validación con XXX
 <!-- TODO: AGREGADO - IMPLEMENTAR ELIMINACIÓN DE FICHEROS SCREENSHOT -->
 Para instalar y ejecutar las pruebas con XXX, consulta la guía en el siguiente enlace:
@@ -31,6 +29,8 @@ Para instalar y ejecutar las pruebas con Cypress, consulta la guía en el siguie
 ---
 
 ### Notas Adicionales
+
+_Nota: para la entrega de la semana 6 se hosteo las plataformas en la nube_
 
 
 ---
