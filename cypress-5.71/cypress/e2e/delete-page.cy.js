@@ -31,6 +31,9 @@ describe('Delete a page', () => {
     cy.screenshot('7.1-4');
     cy.get('button.gh-btn.gh-btn-red.gh-btn-icon.ember-view').click();
     cy.screenshot('7.1-5');
+    Cypress.Promise.onPossiblyUnhandledRejection((error, promise) => {
+      throw error
+  })
     // The before cy.get is to confirm button delete and generate a console error avoiding the next verification
     // Then
     cy.get('gh-content-entry-title').contains(pageTitle).should('not.exist'); 

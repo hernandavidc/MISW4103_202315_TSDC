@@ -23,17 +23,19 @@ describe('Delete a page', () => {
     const pageTitle = faker.lorem.sentence();
     const pageContent = faker.lorem.paragraphs(1);
     cy.get('textarea.gh-editor-title.ember-text-area').type(pageTitle);
-    cy.get('p[data-koenig-dnd-droppable="true"]').type(pageContent);
+    cy.get('.koenig-editor__editor.__mobiledoc-editor').type(pageContent);
     cy.screenshot('7.1-2');
     cy.get('button.settings-menu-toggle.gh-btn.gh-btn-editor').click()
     cy.screenshot('7.1-3');
-    cy.get('button.gh-btn.gh-btn-outline.gh-btn-icon.gh-btn-fullwidth').click();
+    cy.wait(1000)
+    cy.get('button.settings-menu-delete-button').click();
+    cy.wait(1000)
     cy.screenshot('7.1-4');
     cy.get('button.gh-btn.gh-btn-red.gh-btn-icon.ember-view').click();
     cy.screenshot('7.1-5');
-    // The before cy.get is to confirm button delete and generate a console error avoiding the next verification
     // Then
-    cy.get('gh-content-entry-title').contains(pageTitle).should('not.exist'); 
+    cy.wait(1000)
+    cy.get('a.gh-post-list-title').contains(pageTitle).should('not.exist'); 
   })
 
   // Escenario 7.2
@@ -43,11 +45,11 @@ describe('Delete a page', () => {
     const pageTitle = faker.lorem.sentence();
     const pageContent = faker.lorem.paragraphs(1);
     cy.get('textarea.gh-editor-title.ember-text-area').type(pageTitle);
-    cy.get('p[data-koenig-dnd-droppable="true"]').type(pageContent);
+    cy.get('.koenig-editor__editor.__mobiledoc-editor').type(pageContent);
     cy.screenshot('7.2-2');
     cy.get('button.settings-menu-toggle.gh-btn.gh-btn-editor').click()
     cy.screenshot('7.2-3');
-    cy.get('button.gh-btn.gh-btn-outline.gh-btn-icon.gh-btn-fullwidth').click();
+    cy.get('button.gh-btn.settings-menu-delete-button').click();
     cy.screenshot('7.2-4');
     cy.get('.modal-footer button.gh-btn').contains('Cancel').click();
     cy.screenshot('7.2-5');

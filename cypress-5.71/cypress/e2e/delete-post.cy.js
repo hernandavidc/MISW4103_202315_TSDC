@@ -12,7 +12,10 @@ describe('Delete a Post', () => {
       cy.screenshot('3.1-0');
       initScreenshot = true;
     }
-    cy.get('a[href="#/posts/"]').click();
+    cy.get('a[href="#/posts/"]').then((btns) =>{
+      const index = Math.floor(Math.random() * btns.length);
+      btns[index].click();
+    });
     cy.get('a[href="#/editor/post/"]').then((btns) =>{
       const index = Math.floor(Math.random() * btns.length);
       btns[index].click();
@@ -54,9 +57,9 @@ describe('Delete a Post', () => {
     cy.get('.modal-footer button.gh-btn').contains('Cancel').click();
     cy.screenshot('3.2-5');
     cy.get('a[href="#/posts/"]').then((btns) =>{
-        const index = Math.floor(Math.random() * btns.length);
-        btns[index].click();
-      });
+      const index = Math.floor(Math.random() * btns.length);
+      btns[index].click();
+    });
     cy.wait(1000)
     cy.screenshot('3.2-6');
     cy.get('a.gh-post-list-title').contains(postTitle); 

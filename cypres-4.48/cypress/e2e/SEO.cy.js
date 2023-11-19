@@ -27,12 +27,13 @@ describe('Add Metadata to a Post', () => {
     const postTitle = faker.lorem.sentence();
     const postContent = faker.lorem.paragraphs(2);
     cy.get('textarea.gh-editor-title.ember-text-area').type(postTitle);
-    cy.get('.kg-prose > p').type(postContent);
+    cy.get('.koenig-editor__editor.__mobiledoc-editor').type(postContent, {force: true});
     cy.screenshot('9.1-2'); //llenar datos de formulario
 
     // Configurar Metadata
-    cy.get('button[data-test-psm-trigger]').click();
-    cy.get('button[data-test-button="meta-data"]').click();
+    cy.get('button.settings-menu-toggle').click();
+    cy.wait(1000)
+    cy.get('li.nav-list-item > button:first').click();
     cy.screenshot('9.1-3'); //Abrir sidebar
 
     // Then
