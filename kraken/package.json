@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "appium": "^2.2.1",
-    "kraken-node": "^1.0.24"
+    "kraken-node": "^1.0.24",
+    "resemblejs": "^5.0.0"
   },
   "name": "kraken",
   "version": "1.0.0",
