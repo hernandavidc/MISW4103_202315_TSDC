@@ -11,7 +11,10 @@ describe('Create a post', () => {
       cy.screenshot('1.1-0');
       initScreenshot = true;
     }
-    cy.get('a[href="#/posts/"]').click();
+    cy.get('a[href="#/posts/"]').then((btns) =>{
+      const index = Math.floor(Math.random() * btns.length);
+      btns[index].click();
+    });
     cy.get('a[href="#/editor/post/"]').then((btns) =>{
       const index = Math.floor(Math.random() * btns.length);
       btns[index].click();
