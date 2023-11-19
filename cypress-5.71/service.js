@@ -9,7 +9,7 @@ function filesList(dirName, useCaseList) {
     // Get all the images needed to compare
     var allFilesForUseCases = []
     useCaseToEvaluate.forEach(folderName => {
-        fs.readdirSync(dirName + "/" +folderName).forEach(file => allFilesForUseCases.push(file))
+        fs.readdirSync(dirName + "/" +folderName).forEach(file => allFilesForUseCases.push(dirName + "/" + folderName + "/" + file))
     })
     return allFilesForUseCases
 }
