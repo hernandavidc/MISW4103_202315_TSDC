@@ -10,10 +10,9 @@ Este release fue realizado por los siguientes estudiantes:
 
 ## Instalación y Ejecución de Pruebas
 
-### Pruebas de validación con XXX
-<!-- TODO: AGREGADO - IMPLEMENTAR ELIMINACIÓN DE FICHEROS SCREENSHOT -->
-Para instalar y ejecutar las pruebas con XXX, consulta la guía en el siguiente enlace:
-[Guía de Instalación y Ejecución con XXX]()
+### Pruebas de validación con Resemble y cypress
+Para instalar y ejecutar las pruebas con Resemble y cypress, consulta la guía en el siguiente enlace:
+[Guía de Instalación y Ejecución con Resemble y cypress](https://github.com/hernandavidc/MISW4103_202315_TSDC/blob/main/cypress/README.md)
 
 ## Pasos entrega semana 5
 
