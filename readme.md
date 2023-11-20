@@ -19,7 +19,7 @@ Para instalar y ejecutar las pruebas con XXX, consulta la guía en el siguiente 
 
 ### Pruebas en Kraken
 Para instalar y ejecutar las pruebas automatizadas con Kraken, sigue el paso a paso detallado en el siguiente enlace:
-[Guía de Instalación y Ejecución con Kraken](https://github.com/hernandavidc/MISW4103_202315_TSDC/blob/main/kraken/readme.txt)
+[Guía de Instalación y Ejecución con Kraken](https://github.com/hernandavidc/MISW4103_202315_TSDC/blob/main/kraken/readme.md)
 
 ### Pruebas con Cypress
 Para instalar y ejecutar las pruebas con Cypress, consulta la guía en el siguiente enlace:
