@@ -13,8 +13,8 @@ Para la instalación de ResembleJS se recomienda leer las instrucciones
 Si se va a realizar la ejecución en MAC, ejecutar el siguiente comando si no se tienen las dependencias para canvas [Canvas](https://www.npmjs.com/package/canvas):
 > brew install pkg-config cairo pango libpng jpeg giflib librsvg pixman
 
-Instalar Resemble desde la carpeta cypress-5.71:
-> npm install resemblejs
+Instalar las dependencias incluyendo Resemble:
+>npm i -E
 
 Luego, nos ubicamos en las carpetas cypres-4.48 y cypress-5.71 y ejecutamos el siguiente comando para ejecutar las pruebas y generar las capturas de pantalla:
 
