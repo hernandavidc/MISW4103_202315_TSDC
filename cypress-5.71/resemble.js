@@ -52,11 +52,11 @@ function reportContent(info){
     </div>
     <div class="imgline">
       <div class="imgcontainer">
-        <span class="imgname">Reference</span>
+        <span class="imgname">Ghost 4.48</span>
         <img class="img2" src="${info.oldImagePath}" id="refImage" label="Reference">
       </div>
       <div class="imgcontainer">
-        <span class="imgname">Test</span>
+        <span class="imgname">Ghost 5.71</span>
         <img class="img2" src="${info.newImagePath}" id="testImage" label="Test">
       </div>
     </div>
