@@ -1,7 +1,8 @@
 # Semana 6
 
 ## Aclaraciones
-Se ha empleado la versión de Ghost 5.71 [Ghost 5.71 servidor](https://ghost-test-e23.digitalpress.blog/ghost/#/signin) y la versión de Ghost 4.48 [Ghost 4.48 servidor](http://ec2-18-191-49-64.us-east-2.compute.amazonaws.com:2368/ghost/#/signin). Estas versiones están en servidores para facilitar el proceso de evaluación, por este motivo, las credenciales están quemadas en los archivos **cypress.config.js** de las carpetas cypress-4.48 y cypress-5.71.
+Se ha empleado la versión de Ghost 5.71 [Ghost 5.71 servidor](https://ghost-test-e23.digitalpress.blog/ghost/#/signin) y la versión de Ghost 4.48 [Ghost 4.48 servidor](http://ec2-18-191-49-64.us-east-2.compute.amazonaws.com:2368/ghost/#/signin). Estas versiones están en servidores para facilitar el proceso de evaluación, por este motivo, las credenciales están quemadas en los archivos **cypress.config.js** de las carpetas cypress-4.48 y cypress-5.71.  
+Resemble se utiliza en Cypress con 10 escenarios de prueba, Backstop se implementa para los escenarios de Kraken.
 
 ## Procedimiento
 
@@ -13,8 +14,8 @@ Para la instalación de ResembleJS se recomienda leer las instrucciones
 Si se va a realizar la ejecución en MAC, ejecutar el siguiente comando si no se tienen las dependencias para canvas [Canvas](https://www.npmjs.com/package/canvas):
 > brew install pkg-config cairo pango libpng jpeg giflib librsvg pixman
 
-Instalar Resemble desde la carpeta cypress-5.71:
-> npm install resemblejs
+Instalar las dependencias incluyendo Resemble:
+>npm i -E
 
 Luego, nos ubicamos en las carpetas cypres-4.48 y cypress-5.71 y ejecutamos el siguiente comando para ejecutar las pruebas y generar las capturas de pantalla:
 
