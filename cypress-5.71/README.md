@@ -14,6 +14,8 @@ Para la instalación de ResembleJS se recomienda leer las instrucciones
 Si se va a realizar la ejecución en MAC, ejecutar el siguiente comando si no se tienen las dependencias para canvas [Canvas](https://www.npmjs.com/package/canvas):
 > brew install pkg-config cairo pango libpng jpeg giflib librsvg pixman
 
+Si se va a realizar la ejención en Windows, se requiere seguir lo documentado en el siguiente link: [Canvas en windows](https://github.com/Automattic/node-canvas/wiki/Installation:-Windows)
+
 Instalar las dependencias incluyendo Resemble:
 >npm i -E
 
