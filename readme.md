@@ -10,9 +10,13 @@ Este release fue realizado por los siguientes estudiantes:
 
 ## Instalación y Ejecución de Pruebas
 
-### Pruebas de validación con Resemble y cypress
+### Pruebas de validación con Resemble y BackStop con Kraken
+Para instalar y ejecutar las pruebas con Resemble y BackStop con Kraken, consulta la guía en el siguiente enlace:
+[Guía de Instalación y Ejecución con Resemble y BackStop con Kraken](https://github.com/hernandavidc/MISW4103_202315_TSDC/blob/main/kraken/readme.md)
+
+### Pruebas de validación con Resemble con cypress
 Para instalar y ejecutar las pruebas con Resemble y cypress, consulta la guía en el siguiente enlace:
-[Guía de Instalación y Ejecución con Resemble y cypress](https://github.com/hernandavidc/MISW4103_202315_TSDC/blob/main/cypress-5.71/README.md)
+[Guía de Instalación y Ejecución con Resemble con cypress](https://github.com/hernandavidc/MISW4103_202315_TSDC/blob/main/cypress-5.71/README.md)
 
 ## Pasos entrega semana 5
 
