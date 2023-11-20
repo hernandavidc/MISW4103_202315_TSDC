@@ -9,7 +9,7 @@ Este release fue realizado por los siguientes estudiantes:
 - Alejandro Colorado - c.colorado@uniandes.edu.co
 
 ## Semana 6
-Video: https://uniandes-my.sharepoint.com/:v:/g/personal/d_pareja_uniandes_edu_co/Eaq6Cy0XAo1BnVdi0JsMAPkBy37Sy9RGlnNM05OC9etukQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&e=PSrjMH
+[Video entrega semana 6](https://uniandes-my.sharepoint.com/:v:/g/personal/d_pareja_uniandes_edu_co/Eaq6Cy0XAo1BnVdi0JsMAPkBy37Sy9RGlnNM05OC9etukQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&e=PSrjMH)
 
 ### Instalación y Ejecución de Pruebas
 
