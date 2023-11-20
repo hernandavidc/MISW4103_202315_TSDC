@@ -31,6 +31,14 @@ Para instalar y ejecutar las pruebas con Cypress, consulta la guía en el siguie
 ### Notas Adicionales
 
 _Nota: para la entrega de la semana 6 se hosteo las plataformas en la nube_
+* v4.48: http://ec2-18-191-49-64.us-east-2.compute.amazonaws.com:2368/ghost/#/signin
 
+User: hd.alvarez@uniandes.edu.co
+
+* v5.71: https://ghost-test-e23.digitalpress.blog/ghost/#/signin
+
+User: d.pareja@uniandes.edu.co
+
+Para los dos casos la pass: QWER1234..
 
 ---
