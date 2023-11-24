@@ -12,5 +12,6 @@ module.exports = defineConfig({
     admin_password: 'QWER1234..',
     contributor_email: 'd.pareja@uniandes.edu.co',
     contributor_password: 'QWER1234..',
+    enable_screenshots: false,
   },
 });
