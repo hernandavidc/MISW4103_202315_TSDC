@@ -13,6 +13,7 @@ module.exports = defineConfig({
     contributor_email: 'd.pareja@uniandes.edu.co',
     contributor_password: 'QWER1234..',
     enable_screenshots: false,
-    mockaroo_post_schema: 'https://my.api.mockaroo.com/post_data.json?key=aed2f580'
+    mockaroo_post_schema: 'https://my.api.mockaroo.com/post_data.json?key=aed2f580',
+    mockaroo_page_schema: 'https://my.api.mockaroo.com/page.json?key=aed2f580',
   },
 });
