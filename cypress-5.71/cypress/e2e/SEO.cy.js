@@ -243,4 +243,46 @@ describe('Add Metadata to a Post', () => {
       expect(placeholder).to.include(subStringTitle);
     });
   });
+
+  it('9.10 Se requiere crear un post con especificaciones SEO, donde el titulo del post sea utilizado por defecto', () => {
+    cy.custom_screenshot('9.10-1'); // llegar a la pagina
+    // When
+    const postTitle = dirtyData.post_title;
+    const postContent = dirtyData.post_content
+    cy.get('textarea.gh-editor-title.ember-text-area').type(postTitle);
+    cy.get('.kg-prose > p').type(postContent);
+    cy.custom_screenshot('9.10-2'); //llenar datos de formulario
+
+    // Configurar Metadata
+    cy.get('button[data-test-psm-trigger]').click();
+    cy.get('button[data-test-button="meta-data"]').click();
+    cy.custom_screenshot('9.10-3'); //Abrir sidebar
+
+    // Then
+    const subStringTitle = postTitle.substring(0, 20);
+    cy.get('input[name="post-setting-meta-title"]').should('have.attr', 'placeholder').should(placeholder => {
+      expect(placeholder).to.include(subStringTitle);
+    });
+  });
+
+  it('9.11 Se requiere crear un post con especificaciones SEO, donde la descripción del post sea utilizado por defecto', () => {
+    cy.custom_screenshot('9.11-1'); // llegar a la pagina
+    // When
+    const postTitle = dirtyData.post_title;
+    const postContent = dirtyData.post_content
+    cy.get('textarea.gh-editor-title.ember-text-area').type(postTitle);
+    cy.get('.kg-prose > p').type(postContent);
+    cy.custom_screenshot('9.11-2'); //llenar datos de formulario
+
+    // Configurar Metadata
+    cy.get('button[data-test-psm-trigger]').click();
+    cy.get('button[data-test-button="meta-data"]').click();
+    cy.custom_screenshot('9.11-3'); //Abrir sidebar
+
+    // Then
+    const subStringTitle = postContent.substring(0, 20);
+    cy.get('input[name="post-setting-meta-description"]').should('have.attr', 'placeholder').should(placeholder => {
+      expect(placeholder).to.include(subStringTitle);
+    });
+  });
 });
