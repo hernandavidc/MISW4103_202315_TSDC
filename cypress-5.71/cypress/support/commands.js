@@ -32,3 +32,10 @@ Cypress.Commands.add('custom_screenshot', (id) => {
   const enableLog = Cypress.env('enable_screenshots')
   if(!!enableLog){ cy.custom_screenshot(id); }
 })
+
+Cypress.Commands.add("dynamicStrategy", function() {
+  return cy.request(Cypress.env('mockaroo_post_schema')).its('body.0').as('body')
+  .then((post) => {
+      return cy.wrap(post)
+  })
+})

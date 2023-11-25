@@ -34,7 +34,7 @@ describe('Edit a page', () => {
     cy.get('a[href="#/pages/"]').click();
   })
 
-  it('2.1 Editar un pages y ver el cambio en la vista de usuario final', () => {
+  it('6.1 Editar un pages y ver el cambio en la vista de usuario final', () => {
     cy.custom_screenshot('6.1-1');
     // When
     const pagesTitleToEdit = faker.lorem.sentence();

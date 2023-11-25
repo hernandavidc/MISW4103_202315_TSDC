@@ -1,0 +1,18 @@
+{
+    "invalidUser": {
+        "email": "usuario@invalido.com",
+        "password": "contraseñaErronea"
+    },
+    "metadataGoogleSuccessful": {
+        "title": "Some google title",
+        "description": "Some google description"
+    },
+    "metadataTwitterSuccessful": {
+        "title": "Some Twitter title",
+        "description": "Some Twitter description"
+    },
+    "metadataFacebookSuccessful": {
+        "title": "Some Facebook title",
+        "description": "Some Facebook description"
+    }
+}
