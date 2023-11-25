@@ -3,16 +3,38 @@
         "email": "usuario@invalido.com",
         "password": "contraseñaErronea"
     },
-    "metadataGoogleSuccessful": {
-        "title": "Some google title",
-        "description": "Some google description"
+    "postURLInvalid": {
+        "invalidFormat": "post.url,invalid..format",
+        "expectedValidFormat": "post-url-invalid-format"
     },
-    "metadataTwitterSuccessful": {
-        "title": "Some Twitter title",
-        "description": "Some Twitter description"
+    "postURLValid": {
+        "validFormat": "post-url-valido-formato",
+        "expectedValidFormat": "post-url-valido-formato"
     },
-    "metadataFacebookSuccessful": {
-        "title": "Some Facebook title",
-        "description": "Some Facebook description"
+    "publishDate": {
+        "invalidDate": {
+            "invalidDateString": "2023-11-00",
+            "expectedMessage": "Invalid date"
+        },
+        "invalidDateFormat": {
+            "invalidDateString": "2023-11-1",
+            "expectedMessage": "Invalid date format, must be YYYY-MM-DD"
+        }
+    },
+    "publishDateHour": {
+        "invalidDateHourEmpty": {
+            "expectedMessage": "Must be in format: \"15:00\"",
+            "expectedInputContent": "00:00"
+        },
+        "invalidDateHourFormat": {
+            "invalidHourFormat": "32:00",
+            "expectedMessage": "Must be in format: \"15:00\"",
+            "expectedInputContent": "32:00"
+        },
+        "validDateHourFormat": {
+            "validHourFormat": "15:39",
+            "expectedMessage": "",
+            "expectedInputContent": "15:39"
+        }
     }
 }
