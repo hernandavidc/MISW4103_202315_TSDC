@@ -170,6 +170,11 @@ When('I enter Slug Tag {string}', async function (slug_tag) {
     return await element.setValue(slug_tag);
 });
 
+When('I enter Color Tag {string}', async function (color_tag) {
+    let element = await this.driver.$('data-test-input="accentColor"');
+    return await element.setValue(color_tag);
+});
+
 When('I click New Tags', async function() {
     let element = await this.driver.$('[class="ember-view gh-btn gh-btn-primary"]');
     return await element.click();
