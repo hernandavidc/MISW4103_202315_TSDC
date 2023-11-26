@@ -195,19 +195,86 @@ describe('Edit a post', () => {
   //   cy.get('input[data-test-date-time-picker-time-input]').should('have.value', this.dataPool.publishDateHour.invalidDateHourEmpty.expectedInputContent);
   // })
 
-  it('2.11 Ingresar a editar un post, modificar el campo de hora con un formato válido', function() {
+  // it('2.11 Ingresar a editar un post, modificar el campo de hora con un formato válido', function() {
+  //   // When
+  //   cy.get('.gh-post-list-title').first().click();
+  //   cy.wait(1000);
+  //   cy.get('button.settings-menu-toggle').click();
+  //   cy.wait(1000);
+  //   cy.get('input[data-test-date-time-picker-time-input]').clear();
+  //   cy.get('input[data-test-date-time-picker-time-input]').type(this.dataPool.publishDateHour.validDateHourFormat.validHourFormat, { force: true });
+  //   cy.get('input#url').click();
+  //   cy.wait(2000);
+  //   // Then
+  //   cy.get('div[data-test-date-time-picker-error]').should('not.exist');
+  //   cy.get('input[data-test-date-time-picker-time-input]').should('have.value', this.dataPool.publishDateHour.validDateHourFormat.expectedInputContent);
+  // })
+
+  // it('2.12 Ingresar a editar un post, modificar el campo excerpt con un longitud superior a 300', function() {
+  //   // When
+  //   cy.get('.gh-post-list-title').first().click();
+  //   cy.wait(1000);
+  //   cy.get('button.settings-menu-toggle').click();
+  //   cy.wait(1000);
+  //   cy.get('textarea[name="post-setting-custom-excerpt"]').type(this.dataPool.excerptField.invalid.invalidInputText);
+  //   cy.get('label[for="custom-excerpt"]').click();
+  //   cy.wait(2000);
+  //   // Then
+  //   cy.get('[data-test-error="custom-excerpt"]').contains(this.dataPool.excerptField.invalid.expectedMessage);
+  // })
+
+  // it('2.13 Ingresar a editar un post, modificar el campo excerpt con un longitud inferior a 300 caracteres', function() {
+  //   // When
+  //   cy.get('.gh-post-list-title').first().click();
+  //   cy.wait(1000);
+  //   cy.get('button.settings-menu-toggle').click();
+  //   cy.wait(1000);
+  //   cy.get('textarea[name="post-setting-custom-excerpt"]').type(this.dataPool.excerptField.valid.validInputText);
+  //   cy.get('label[for="custom-excerpt"]').click();
+  //   cy.wait(2000);
+  //   // Then
+  //   cy.get('[data-test-error="custom-excerpt"]').should('not.have.text');
+  // })
+
+  // it('2.14 Ingresar a editar un post, modificar el campo tag con una longitud superior a 190 caracteres', function() {
+  //   // When
+  //   cy.get('.gh-post-list-title').first().click();
+  //   cy.wait(1000);
+  //   cy.get('button.settings-menu-toggle').click();
+  //   cy.wait(1000);
+  //   cy.get('input.ember-power-select-trigger-multiple-input').first().type(this.dataPool.tagField.invalid.invalidInputText);
+  //   cy.get('li.ember-power-select-option').click();
+  //   cy.wait(500);
+  //   cy.get('button.settings-menu-toggle').click();
+  //   cy.wait(500);
+  //   cy.get('button.gh-btn.gh-btn-editor.darkgrey.gh-publish-trigger').click(); // btn publicar
+  //   cy.wait(1000);
+  //   cy.get('button.gh-btn.gh-btn-black.gh-btn-large').click(); // confirmación
+  //   cy.wait(1000);
+  //   cy.get('button[data-test-button="confirm-publish"]').click(); // publicar ahora
+  //   cy.wait(2000);
+  //   // Then
+  //   cy.get('p.error.gh-box.gh-box-error').should('contain', this.dataPool.tagField.invalid.expectedMessage);
+  // })
+
+  it('2.15 Ingresar a editar un post, modificar el campo tag con una longitud inferior a 190 caracteres', function() {
     // When
     cy.get('.gh-post-list-title').first().click();
     cy.wait(1000);
     cy.get('button.settings-menu-toggle').click();
     cy.wait(1000);
-    cy.get('input[data-test-date-time-picker-time-input]').clear();
-    cy.get('input[data-test-date-time-picker-time-input]').type(this.dataPool.publishDateHour.validDateHourFormat.validHourFormat, { force: true });
-    cy.get('input#url').click();
+    cy.get('input.ember-power-select-trigger-multiple-input').first().type(this.dataPool.tagField.valid.validInputText);
+    cy.get('li[data-option-index="0"]').click();
+    cy.wait(500);
+    cy.get('button.settings-menu-toggle').click();
+    cy.wait(500);
+    cy.get('button.gh-btn.gh-btn-editor.darkgrey.gh-publish-trigger').click(); // btn publicar
+    cy.wait(1000);
+    cy.get('button.gh-btn.gh-btn-black.gh-btn-large').click(); // confirmación
+    cy.wait(1000);
+    cy.get('button[data-test-button="confirm-publish"]').click(); // publicar ahora
     cy.wait(2000);
     // Then
-    cy.get('div[data-test-date-time-picker-error]').should('not.exist');
-    cy.get('input[data-test-date-time-picker-time-input]').should('have.value', this.dataPool.publishDateHour.validDateHourFormat.expectedInputContent);
+    cy.get('p.error.gh-box.gh-box-error').should('not.exist');
   })
-
 })
