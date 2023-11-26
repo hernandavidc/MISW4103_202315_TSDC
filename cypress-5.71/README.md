@@ -1,3 +1,7 @@
+# Semana 7
+
+Los pasos de impletación de la semana 6 aún son pertienentes, como variante se tiene una nueva variable de entorno llamada `enable_screenshots` el cual es utilizada en el comando personalizado `custom_screenshot` para activar o desactivar la toma de pantalla en cada caso.
+
 # Semana 6
 
 ## Aclaraciones

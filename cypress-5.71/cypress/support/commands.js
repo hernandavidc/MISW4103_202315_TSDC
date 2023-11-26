@@ -21,8 +21,14 @@
 Cypress.Commands.add('login', (fileName = false) => { 
   cy.visit(Cypress.env('admin_url'));
   cy.wait(1000);
-  if(fileName){ cy.screenshot(fileName); }
+  const enableLog = Cypress.env('enable_screenshots')
+  if(!!enableLog && fileName){ cy.custom_screenshot(fileName); }
   cy.get('input[name="identification"]').type(Cypress.env('admin_email'));
   cy.get('input[name="password"]').type(Cypress.env('admin_password'));
   cy.get('button.login.gh-btn').click();
+})
+
+Cypress.Commands.add('custom_screenshot', (id) => { 
+  const enableLog = Cypress.env('enable_screenshots')
+  if(!!enableLog){ cy.custom_screenshot(id); }
 })

@@ -1,0 +1,58 @@
+{
+    "invalidUser": {
+        "email": "usuario@invalido.com",
+        "password": "contraseñaErronea"
+    },
+    "postURLInvalid": {
+        "invalidFormat": "post.url,invalid..format",
+        "expectedValidFormat": "post-url-invalid-format"
+    },
+    "postURLValid": {
+        "validFormat": "post-url-valido-formato",
+        "expectedValidFormat": "post-url-valido-formato"
+    },
+    "publishDate": {
+        "invalidDate": {
+            "invalidDateString": "2023-11-00",
+            "expectedMessage": "Invalid date"
+        },
+        "invalidDateFormat": {
+            "invalidDateString": "2023-11-1",
+            "expectedMessage": "Invalid date format, must be YYYY-MM-DD"
+        }
+    },
+    "publishDateHour": {
+        "invalidDateHourEmpty": {
+            "expectedMessage": "Must be in format: \"15:00\"",
+            "expectedInputContent": "00:00"
+        },
+        "invalidDateHourFormat": {
+            "invalidHourFormat": "32:00",
+            "expectedMessage": "Must be in format: \"15:00\"",
+            "expectedInputContent": "32:00"
+        },
+        "validDateHourFormat": {
+            "validHourFormat": "15:39",
+            "expectedMessage": "",
+            "expectedInputContent": "15:39"
+        }
+    },
+    "excerptField": {
+        "invalid": {
+            "invalidInputText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "expectedMessage": "Excerpt cannot be longer than 300 characters."
+        },
+        "valid": {
+            "validInputText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }
+    },
+    "tagField": {
+        "invalid": {
+            "invalidInputText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+            "expectedMessage": "Validation error, cannot edit post."
+        },
+        "valid": {
+            "validInputText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+        }
+    }
+}
