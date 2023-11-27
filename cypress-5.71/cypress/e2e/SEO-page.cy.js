@@ -16,7 +16,7 @@ describe('Add Metadata to a Page', () => {
       const index = Math.floor(Math.random() * btns.length);
       btns[index].click();
     });
-    cy.get('a[href="#/editor/pages/"]').then((btns) =>{
+    cy.get('a[href="#/editor/page/"]').then((btns) =>{
       const index = Math.floor(Math.random() * btns.length);
       btns[index].click();
     });

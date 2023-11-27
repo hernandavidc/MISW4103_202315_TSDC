@@ -2,6 +2,17 @@
 
 Los pasos de impletación de la semana 6 aún son pertienentes, como variante se tiene una nueva variable de entorno llamada `enable_screenshots` el cual es utilizada en el comando personalizado `custom_screenshot` para activar o desactivar la toma de pantalla en cada caso.
 
+Como primer paso, nos debemos ubicar en la carpeta cypress-5.71
+
+Para cerciorarse que se tengan todas las dependencias necesarias, ejecutar:
+> npm i -E
+
+Para ejecutar los 64 escenarios de pruebas se debe utilizar el comando:
+> npm run cypress:run
+
+Se debe tener en cuenta que Ghost soporta una cantidad máxima de inicio de sesión por hora, por lo que puede ser posible que dada la alta cantidad de escenarios haciendo login se bloqueé Ghost, si esto pasa, se aconseja esperar 30 minutos e ir ejecutando cada archivo de prueba que están presentes en la carpeta cypress/e2e con el siguiente comando que muestra como ejecutar solo edit-post.cy.js, pero se pueden probar los demás archivos:
+> npx cypress run --spec cypress/e2e/edit-post.cy.js
+
 # Semana 6
 
 ## Aclaraciones
