@@ -16,7 +16,7 @@ Given I navigate to page "http://localhost:2368/ghost/"
   And I wait for 3 seconds 
   And I enter Name Tag "vel"
   And I wait for 2 seconds
-  And I enter Color Tag "75e026"
+  And I enter Color Tag "#75e026555555"
   And I wait for 2 seconds
   And I click Save Tags 
   And I wait for 3 seconds 
