@@ -185,7 +185,7 @@ describe('Add Metadata to a Post', () => {
     cy.get('button[data-test-button="twitter-data"]').click(); //Entrar a twitter
     cy.custom_screenshot('9.7-5'); //Abrir sidebar
     const subStringTitle = dirtyData.post_content.substring(0, 20);
-    cy.get('input[name="post-setting-twitter-description"]').should('have.attr', 'placeholder').should(placeholder => {
+    cy.get('textarea[name="post-setting-twitter-description"]').should('have.attr', 'placeholder').should(placeholder => {
       expect(placeholder).to.include(subStringTitle);
     });
   });
@@ -239,7 +239,7 @@ describe('Add Metadata to a Post', () => {
     cy.get('button[data-test-button="facebook-data"]').click(); //Entrar a twitter
     cy.custom_screenshot('9.9-5'); //Abrir sidebar
     const subStringTitle = dirtyData.post_content.substring(0, 20);
-    cy.get('input[name="post-setting-og-description"]').should('have.attr', 'placeholder').should(placeholder => {
+    cy.get('textarea[name="post-setting-og-description"]').should('have.attr', 'placeholder').should(placeholder => {
       expect(placeholder).to.include(subStringTitle);
     });
   });
@@ -281,7 +281,7 @@ describe('Add Metadata to a Post', () => {
 
     // Then
     const subStringTitle = postContent.substring(0, 20);
-    cy.get('input[name="post-setting-meta-description"]').should('have.attr', 'placeholder').should(placeholder => {
+    cy.get('textarea[name="post-setting-meta-description"]').should('have.attr', 'placeholder').should(placeholder => {
       expect(placeholder).to.include(subStringTitle);
     });
   });
