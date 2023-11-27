@@ -15,11 +15,11 @@ Feature: CreateMember
     And I wait for 3 seconds 
     And I click Create New Member
     And I wait for 5 seconds
-    And I Fill Name of the Member "Marlene"
+    And I Fill Name of the Member "Eduardo"
     And I wait for 3 seconds
-    And I Fill Email of the Member "Cleveland_Runolfsdottir@gmail.com"
+    And I Fill Email of the Member "Newell.Parisian60@gmail.com"
     And I wait for 3 seconds
-    And I Fill Note of the Member "voluptatem laudantium fugit ut ea"  
+    And I Fill Note of the Member "ex eaque saepe tenetur laborum"  
     And I wait for 3 seconds
     And I click save member
     And I wait for 7 seconds

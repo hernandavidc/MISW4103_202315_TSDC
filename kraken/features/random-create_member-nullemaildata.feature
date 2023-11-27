@@ -15,9 +15,9 @@ Feature: CreateMember
     And I wait for 3 seconds 
     And I click Create New Member
     And I wait for 5 seconds
-    And I Fill Name of the Member "Afton35@hotmail.com"
+    And I Fill Name of the Member "Josefina_Swaniawski@hotmail.com"
     And I wait for 3 seconds
-    And I Fill Note of the Member "ut numquam iusto culpa est"  
+    And I Fill Note of the Member "quos et magni sequi recusandae"  
     And I wait for 3 seconds
     And I click save member
     And I wait for 7 seconds

@@ -14,11 +14,11 @@ Feature: CreateMember
     And I wait for 3 seconds 
     And I click Create New Member
     And I wait for 5 seconds
-    And I Fill Name of the Member "Raul"
+    And I Fill Name of the Member "Talon"
     And I wait for 3 seconds
-    And I Fill Email of the Member "Abner"
+    And I Fill Email of the Member "Lemuel"
     And I wait for 3 seconds
-    And I Fill Note of the Member "Qui voluptatum iure. Vel deserunt inventore eaque ut. Omnis ipsum architecto labore quibusdam nihil quae eius asperiores."  
+    And I Fill Note of the Member "Velit libero porro dolor et. Vel optio quisquam eaque rerum quo numquam a. Error mollitia tempore praesentium. Earum repellendus magni dolore repellat dolorum in eius quisquam."  
     And I wait for 3 seconds
     And I click save member
     And I wait for 7 seconds

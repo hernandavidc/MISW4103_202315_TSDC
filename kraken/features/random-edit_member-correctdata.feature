@@ -14,11 +14,11 @@ Feature: CreateMember
     And I wait for 3 seconds 
     And I click Create New Member
     And I wait for 5 seconds
-    And I Fill Name of the Member "Horacio"
+    And I Fill Name of the Member "Al"
     And I wait for 3 seconds
-    And I Fill Email of the Member "Alyson8@gmail.com"
+    And I Fill Email of the Member "Vena.Shields37@hotmail.com"
     And I wait for 3 seconds
-    And I Fill Note of the Member "accusamus aliquam ratione hic totam"  
+    And I Fill Note of the Member "vel inventore ullam sed eaque"  
     And I wait for 3 seconds
     And I click save member
     And I wait for 7 seconds
@@ -26,11 +26,11 @@ Feature: CreateMember
     And I wait for 6 seconds     
     And I click Edit Members
     And I wait for 5 seconds
-    And I Fill Name of the Member "Selena"   
+    And I Fill Name of the Member "Jovani"   
     And I wait for 3 seconds
-    And I Fill Email of the Member "Cyrus.Wintheiser@gmail.com"   
+    And I Fill Email of the Member "Mekhi38@yahoo.com"   
     And I wait for 3 seconds
-    And I Fill Note of the Member "nam laborum quibusdam et similique" 
+    And I Fill Note of the Member "et nisi non reiciendis excepturi" 
     And I wait for 3 seconds
     And I click save member
     And I wait for 7 seconds
