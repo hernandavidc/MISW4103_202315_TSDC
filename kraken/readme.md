@@ -91,3 +91,5 @@ asi se realizaron todos los casos los cuales añadimos en un reporte html custom
 Para la generación de los casos de prueba se creó un script index_apriori.js en el cual se encuentra la lógica para extraer los datos de los archivos json y usar los datos en los feature generados.
 
 La instrucción para generar los archivos de prueba es la siguiente 'node index_apriori.js', esta instrucción es necesaria antes de ejecutar las pruebas. Despues de esto ejecutar las pruebas una por una pasandolas al feature my_first.feature
+
+## Faker
