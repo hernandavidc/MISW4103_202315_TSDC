@@ -209,7 +209,7 @@ describe('Add Metadata to a Page', () => {
     cy.get('button[aria-label="Close meta data panel"]').click(); //Cerrar metadata
 
     // Then
-    cy.get('button[data-test-button="facebook-data"]').click(); //Entrar a twitter
+    cy.get('button[data-test-button="facebook-data"]').click(); //Entrar a Facebook
     cy.custom_screenshot('10.8-5'); //Abrir sidebar
     const subStringTitle = dirtyData.page_name.substring(0, 25);
     cy.get('input[name="post-setting-og-title"]').should('have.attr', 'placeholder').should(placeholder => {
@@ -217,7 +217,7 @@ describe('Add Metadata to a Page', () => {
     });
   });
 
-  it('10.9 Se requiere crear una page con especificaciones SEO, donde la descripción de la meta data de google aplica para twitter', () => {
+  it('10.9 Se requiere crear una page con especificaciones SEO, donde la descripción de la meta data de google aplica para Facebook', () => {
     cy.custom_screenshot('10.9-1'); // llegar a la pagina
     // When
     const pageTitle = faker.lorem.sentence();
@@ -236,7 +236,7 @@ describe('Add Metadata to a Page', () => {
     cy.get('button[aria-label="Close meta data panel"]').click(); //Cerrar metadata
 
     // Then
-    cy.get('button[data-test-button="facebook-data"]').click(); //Entrar a twitter
+    cy.get('button[data-test-button="facebook-data"]').click(); //Entrar a Facebook
     cy.custom_screenshot('10.9-5'); //Abrir sidebar
     const subStringTitle = dirtyData.page_content.substring(0, 20);
     cy.get('textarea[name="post-setting-og-description"]').should('have.attr', 'placeholder').should(placeholder => {
