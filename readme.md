@@ -49,7 +49,7 @@ _Nota: para la entrega de la semana 6 se hosteo las plataformas en la nube_
 
 User: hd.alvarez@uniandes.edu.co
 
-* v5.71: https://ghost-test-e23.digitalpress.blog/ghost/#/signin
+* v5.71: http://ec2-18-117-254-197.us-east-2.compute.amazonaws.com:2368/ghost/#/signin (Antiguo Host: https://ghost-test-e23.digitalpress.blog/ghost/#/signin)
 
 User: d.pareja@uniandes.edu.co
 

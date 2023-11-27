@@ -7,11 +7,18 @@ Como primer paso, nos debemos ubicar en la carpeta cypress-5.71
 Para cerciorarse que se tengan todas las dependencias necesarias, ejecutar:
 > npm i -E
 
-Para ejecutar los 64 escenarios de pruebas se debe utilizar el comando:
+Para ejecutar los 64 escenarios de pruebas se debe utilizar el comando (OJO: tener en cuenta las notas):
 > npm run cypress:run
 
-Se debe tener en cuenta que Ghost soporta una cantidad máxima de inicio de sesión por hora, por lo que puede ser posible que dada la alta cantidad de escenarios haciendo login se bloqueé Ghost, si esto pasa, se aconseja esperar 30 minutos e ir ejecutando cada archivo de prueba que están presentes en la carpeta cypress/e2e con el siguiente comando que muestra como ejecutar solo edit-post.cy.js, pero se pueden probar los demás archivos:
+### Notas
+
+Con el comando npm run cypress:run se ha experimentado que se puede tumbar el servicio de Amazon EC2 que está alojando a Ghost 5.71, por lo que es recomendable ir ejecutando cada archivo de pruebas por separado dando espera entre cada ejecución, se configuró un comando cron para que en caso de que la instancia se reinicie sola levante nuevamente el proyecto de Ghost, pero en caso de experimentar problemas con la instancia en EC2, por favor comunicarse con Hernán David Álvarez Caballero.
+
+Se debe tener en cuenta que Ghost soporta una cantidad máxima de inicio de sesión por hora, por lo que puede ser posible que dada la alta cantidad de escenarios haciendo login se bloqueé Ghost, si esto pasa, se aconseja esperar 30 o 60 minutos e ir ejecutando cada archivo de prueba que están presentes en la carpeta cypress/e2e con el siguiente comando que muestra como ejecutar solo el archivo edit-post.cy.js, pero se pueden probar los demás archivos:
 > npx cypress run --spec cypress/e2e/edit-post.cy.js
+
+En caso de requerir ver la interfaz gráfica de cypress para la ejecución de los escenarios, se puede ejecutar el siguiente comando:
+> npm run cypress:open
 
 # Semana 6
 

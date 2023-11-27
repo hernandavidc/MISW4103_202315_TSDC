@@ -55,24 +55,24 @@ describe('Edit a post', () => {
     cy.get('.gh-post-list-title').first().find('.gh-content-entry-title').should('contain', postTitleToEdit);
   })
 
-  // it('2.2 Editar un post, dejarlo vacío e intentar guardarlo', () => {
-  //   cy.custom_screenshot('2.2-1');
-  //   // When
-  //   cy.get('.gh-post-list-title').first().click()
-  //   cy.wait(1000)
-  //   cy.get('textarea[placeholder="Post title"]').clear();
-  //   cy.wait(2000)
-  //   cy.custom_screenshot('2.2-2');
-  //   cy.get('a[href="#/posts/?type=draft"]').then((btns) =>{
-  //       const index = Math.floor(Math.random() * btns.length);
-  //       btns[index].click();
-  //     });
-  //   cy.wait(1000)
+  it('2.2 Editar un post, dejarlo vacío e intentar guardarlo', () => {
+    cy.custom_screenshot('2.2-1');
+    // When
+    cy.get('.gh-post-list-title').first().click()
+    cy.wait(1000)
+    cy.get('textarea[placeholder="Post title"]').clear();
+    cy.wait(2000)
+    cy.custom_screenshot('2.2-2');
+    cy.get('a[href="#/posts/?type=draft"]').then((btns) =>{
+        const index = Math.floor(Math.random() * btns.length);
+        btns[index].click();
+      });
+    cy.wait(1000)
 
-  //   cy.custom_screenshot('2.2-3');
-  //   // Then
-  //   cy.get('.gh-post-list-title').first().find('.gh-content-entry-title').should('contain', "");
-  // })
+    cy.custom_screenshot('2.2-3');
+    // Then
+    cy.get('.gh-post-list-title').first().find('.gh-content-entry-title').should('contain', "");
+  })
 
   it('2.3 Ingresar a editar un post, modificar algún campo pero no guardar (campo título)', () => {
     cy.custom_screenshot('2.3-1');
