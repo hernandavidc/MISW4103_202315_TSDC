@@ -1,7 +1,7 @@
 Feature: CreateMember
 
     @user1 @web
-  Scenario: Crear un miembro con name Naughty
+  Scenario: Crear un miembro con email Naughty
 
   Given I navigate to page "http://localhost:2368/ghost/"
     And I wait for 5 seconds
@@ -15,7 +15,7 @@ Feature: CreateMember
     And I wait for 3 seconds 
     And I click Create New Member
     And I wait for 5 seconds
-    And I Fill Name of the Member "᠎"
+    And I Fill Email of the Member " ᠎"
     And I wait for 3 seconds
     And I click save member
     And I wait for 7 seconds
