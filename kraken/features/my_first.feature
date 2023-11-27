@@ -1,6 +1,7 @@
 Feature: CreateMember
+
     @user1 @web
-  Scenario: Crear un miembro con email incorrecto
+  Scenario: Crear un miembro con data Naughty
 
   Given I navigate to page "http://localhost:2368/ghost/"
     And I wait for 5 seconds
@@ -14,11 +15,11 @@ Feature: CreateMember
     And I wait for 3 seconds 
     And I click Create New Member
     And I wait for 5 seconds
-    And I Fill Name of the Member "Talon"
+    And I Fill Name of the Member "Eduardo"
     And I wait for 3 seconds
-    And I Fill Email of the Member "Lemuel"
+    And I Fill Email of the Member "Newell.Parisian60@gmail.com"
     And I wait for 3 seconds
-    And I Fill Note of the Member "Velit libero porro dolor et. Vel optio quisquam eaque rerum quo numquam a. Error mollitia tempore praesentium. Earum repellendus magni dolore repellat dolorum in eius quisquam."  
+    And I Fill Note of the Member "ex eaque saepe tenetur laborum"  
     And I wait for 3 seconds
     And I click save member
     And I wait for 7 seconds
