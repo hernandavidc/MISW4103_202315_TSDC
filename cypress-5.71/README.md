@@ -1,3 +1,11 @@
+# Semana 8
+Los pasos anteriores siguen siendo vigentes para una ejecución global de las pruebas. Para esta semana, se recomienda habilitar la variable de entorno `enable_screenshots` que se encuentra en el archivo cypress.config.js y ejecutar la prueba en específico para evitar bloqueos en el CMS y tiempos de espera.
+
+Para ejecutar la prueba en específico, en la terminal, entramos a la carpeta de este proyecto:
+> cd .\cypress-5.71\ 
+
+> npx cypress run --spec cypress/e2e/subscribe-newsletter.cy.js
+
 # Semana 7
 
 Los pasos de impletación de la semana 6 aún son pertienentes, como variante se tiene una nueva variable de entorno llamada `enable_screenshots` el cual es utilizada en el comando personalizado `custom_screenshot` para activar o desactivar la toma de pantalla en cada caso.

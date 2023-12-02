@@ -171,7 +171,7 @@ When('I enter Slug Tag {string}', async function (slug_tag) {
 });
 
 When('I enter Color Tag {string}', async function (color_tag) {
-    let element = await this.driver.$('data-test-input="accentColor"');
+    let element = await this.driver.$('[data-test-input="accentColor"]');
     return await element.setValue(color_tag);
 });
 

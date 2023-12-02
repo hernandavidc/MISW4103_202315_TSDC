@@ -8,6 +8,11 @@ Este release fue realizado por los siguientes estudiantes:
 - Lucia Colorado - m.colorado@uniandes.edu.co
 - Alejandro Colorado - c.colorado@uniandes.edu.co
 
+## Semana 8
+
+Para la implementación de pruebas E2E se utilizo el Cypress para la versión 5.71, en su readme se puede apreciar los pasos para ejecutar la prueba de la semana 8: 
+[Guía de ejecución de los escenarios con estrategias de datos Cypress](https://github.com/hernandavidc/MISW4103_202315_TSDC/blob/main/cypress-5.71/README.md)
+
 ## Semana 7
 
 ### Instalación y Ejecución de los 120 escenarios de pruebas.
@@ -15,6 +20,10 @@ Este release fue realizado por los siguientes estudiantes:
 #### Cypress
 Para la ejecución de los 64 escenarios en cypress se debe seguir la siguiente guía:
 [Guía de ejecución de los escenarios con estrategias de datos Cypress](https://github.com/hernandavidc/MISW4103_202315_TSDC/blob/main/cypress-5.71/README.md)
+
+#### Kraken
+Para la ejecución de los 60 escenarios en kraken se debe seguir la siguiente guía:
+[Guía de ejecución de los escenarios con estrategias de datos Kraken](https://github.com/hernandavidc/MISW4103_202315_TSDC/blob/main/kraken/readme.md)
 
 ## Semana 6
 [Video entrega semana 6](https://uniandes-my.sharepoint.com/:v:/g/personal/d_pareja_uniandes_edu_co/EaA3VhHb6JxDqo2MJoAa-RgBrm2Hj9vEoxiaM5Sp_Qnl_w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&e=XJKCc3)
