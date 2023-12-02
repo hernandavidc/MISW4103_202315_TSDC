@@ -6,7 +6,7 @@ Para ejecutar la prueba en específico, en la terminal, entramos a la carpeta de
 
 > npx cypress run --spec cypress/e2e/subscribe-newsletter.cy.js
 
-## VRT
+## VRT con Resemble
 
 Dado que se busca probar en la primera semana de la estrategia la suscripción al newsletter, para ver las diferencias visuales, primero nos debemos ubicar en la carpeta cypress-5.71 y cypres-4.48 y en ambas ejecutar:
 > npx cypress run --spec cypress/e2e/subscribe-newsletter.cy.js
@@ -15,6 +15,8 @@ Con esto se generan los screenshots en ambas versiones de Ghost, para realizar l
 > node resemble.js
 
 Este comando crea una carpeta de reportes en la cual se puede observar las diferencias de interfaz al abrir el archivo reports.html en un navegador.
+
+* [Análisis ejecución VRT](ejecucion-vrt)
 
 # Semana 7
 
