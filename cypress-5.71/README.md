@@ -3,6 +3,7 @@ Los pasos anteriores siguen siendo vigentes para una ejecución global de las pr
 
 Para ejecutar la prueba en específico, en la terminal, entramos a la carpeta de este proyecto:
 > cd .\cypress-5.71\ 
+
 > npx cypress run --spec cypress/e2e/subscribe-newsletter.cy.js
 
 # Semana 7
