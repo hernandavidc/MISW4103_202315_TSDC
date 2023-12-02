@@ -10,7 +10,7 @@ Este release fue realizado por los siguientes estudiantes:
 
 ## Semana 8
 
-Para la implementación de pruebas E2E se utilizo el Cypress para la versión 5.71, en su redmi de se puede apreciar los pasos para ejecutar la prueba de la semana 8: 
+Para la implementación de pruebas E2E se utilizo el Cypress para la versión 5.71, en su readme de se puede apreciar los pasos para ejecutar la prueba de la semana 8: 
 [Guía de ejecución de los escenarios con estrategias de datos Cypress](https://github.com/hernandavidc/MISW4103_202315_TSDC/blob/main/cypress-5.71/README.md)
 
 ## Semana 7
