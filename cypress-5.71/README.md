@@ -1,7 +1,7 @@
 # Semana 8
-Los pasos anterior siguen siendo vigentes para una ejecición global de las pruebas, para esa semana se recomienda habilitar la variable de entorno `enable_screenshots` y ejecutar la prueba en especifico para evitar bloqueos en el CMS y tiempos de espera.
+Los pasos anteriores siguen siendo vigentes para una ejecución global de las pruebas. Para esta semana, se recomienda habilitar la variable de entorno `enable_screenshots` y ejecutar la prueba en específico para evitar bloqueos en el CMS y tiempos de espera.
 
-Para ejecutar la prueba en especifico, en la terminal, entramos a la carpeta de este proyecto:
+Para ejecutar la prueba en específico, en la terminal, entramos a la carpeta de este proyecto:
 > cd .\cypress-5.71\ 
 > npx cypress run --spec cypress/e2e/subscribe-newsletter.cy.js
 
