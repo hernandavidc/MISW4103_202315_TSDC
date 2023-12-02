@@ -6,6 +6,16 @@ Para ejecutar la prueba en específico, en la terminal, entramos a la carpeta de
 
 > npx cypress run --spec cypress/e2e/subscribe-newsletter.cy.js
 
+## VRT
+
+Dado que se busca probar en la primera semana de la estrategia la suscripción al newsletter, para ver las diferencias visuales, primero nos debemos ubicar en la carpeta cypress-5.71 y cypres-4.48 y en ambas ejecutar:
+> npx cypress run --spec cypress/e2e/subscribe-newsletter.cy.js
+
+Con esto se generan los screenshots en ambas versiones de Ghost, para realizar la comparación, luego se debe ejecutar el comando:
+> node resemble.js
+
+Este comando crea una carpeta de reportes en la cual se puede observar las diferencias de interfaz al abrir el archivo reports.html en un navegador.
+
 # Semana 7
 
 Los pasos de impletación de la semana 6 aún son pertienentes, como variante se tiene una nueva variable de entorno llamada `enable_screenshots` el cual es utilizada en el comando personalizado `custom_screenshot` para activar o desactivar la toma de pantalla en cada caso.
