@@ -18,14 +18,14 @@ describe('Newsletter subscription', () => {
     cy.get('form[data-members-form]').then((forms) =>{
       const formIndex = Math.floor(Math.random() * forms.length);
       cy.wrap(forms[formIndex]).find('input').type(email);
-      cy.custom_screenshot('9.5-1');
+      cy.custom_screenshot('12.1-1');
       cy.wrap(forms[formIndex]).find('button').click();
       cy.wrap(forms[formIndex]).find('g.nc-loop-dots-4-24-icon-o').should('exist').should('be.visible');
-      cy.custom_screenshot('9.5-2');
+      cy.custom_screenshot('12.1-2');
       cy.wait(3000);
       // Then
       cy.wrap(forms[formIndex]).find('.checkmark').should('exist').should('be.visible');
-      cy.custom_screenshot('9.5-3');
+      cy.custom_screenshot('12.1-3');
     });
   });
 })
