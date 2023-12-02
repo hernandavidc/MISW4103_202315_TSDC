@@ -6,8 +6,8 @@ const fs = require('fs');
 async function executeResembleReport(){
     var rootPathOld = "../cypres-4.48/cypress/screenshots"
     var rootPathNew = "./cypress/screenshots"
-    var oldVersionImagesRoutes = service.filesList(rootPathOld, ["delete-page", "delete-post", "SEO", "edit-post"])
-    var newVersionImagesRoutes = service.filesList(rootPathNew, ["delete-page", "delete-post", "SEO", "edit-post"])
+    var oldVersionImagesRoutes = service.filesList(rootPathOld, ["subscribe-newsletter"])
+    var newVersionImagesRoutes = service.filesList(rootPathNew, ["subscribe-newsletter"])
     var equivalentImages = oldVersionImagesRoutes.filter((old) => {
       return newVersionImagesRoutes.some(newVersion => old == newVersion);
   })

@@ -27,3 +27,8 @@ Cypress.Commands.add('login', (fileName = false) => {
   cy.get('input[name="password"]').type(Cypress.env('admin_password'));
   cy.get('button.login.gh-btn').click();
 })
+
+Cypress.Commands.add('custom_screenshot', (id) => { 
+  const enableLog = Cypress.env('enable_screenshots')
+  if(!!enableLog){ cy.screenshot(id); }
+})
