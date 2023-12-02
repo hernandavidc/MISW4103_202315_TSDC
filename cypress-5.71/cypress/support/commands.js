@@ -30,5 +30,5 @@ Cypress.Commands.add('login', (fileName = false) => {
 
 Cypress.Commands.add('custom_screenshot', (id) => { 
   const enableLog = Cypress.env('enable_screenshots')
-  if(!!enableLog){ cy.custom_screenshot(id); }
+  if(!!enableLog){ cy.screenshot(id); }
 })
