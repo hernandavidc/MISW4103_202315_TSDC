@@ -16,7 +16,7 @@ Con esto se generan los screenshots en ambas versiones de Ghost, para realizar l
 
 Este comando crea una carpeta de reportes en la cual se puede observar las diferencias de interfaz al abrir el archivo reports.html en un navegador.
 
-* [Análisis ejecución VRT](ejecucion-vrt)
+* [Análisis ejecución VRT](https://github.com/hernandavidc/MISW4103_202315_TSDC/wiki/ejecucion-vrt)
 
 # Semana 7
 
