@@ -7,6 +7,7 @@ module.exports = defineConfig({
     },
   },
   env: {
+    home_url: 'http://ec2-18-117-254-197.us-east-2.compute.amazonaws.com:2368/',
     admin_url: 'http://ec2-18-117-254-197.us-east-2.compute.amazonaws.com:2368/ghost/#/signin',
     admin_email: 'd.pareja@uniandes.edu.co',
     admin_password: 'QWER1234..',
